@@ -1,0 +1,101 @@
+---
+id: ADS-colors-v1
+slug: colors
+title: Colors — kolory wykorzystywane w design systemie Asseco
+domain: atoms
+platforms: [web]
+locale: [pl-PL]
+version: 1.0.0
+status: stable
+last_reviewed: 2025-10-20
+owners: ["design@asseco.com", "frontend@asseco.com"]
+tags: [colors, brand-color, complementary-color, surface-color, a11y, primary-color, background-color]
+figma_refs: ["FIG:asseco123#node=456"]
+related: [ADS-patterns-form-krajowy-przelew-v1]
+---
+
+**Summary:** Wylistowane kolory są w design systemie wykorzystywane w sposób spójny, powtarzalny. Służą do zachowania takiego samego wyglądu w systemie
+
+---
+# Podstawowy podział palet i kolorów
+  Ta sekcja przedstawia nadrzędny podział, w jaki organizowany są kolory i palety
+  ## Typy palet
+
+Palety w design systemie są podzielone na dwie główne grupy:
+
+| Typ | Opis |
+|-----|------|
+| Light | Domyślna paleta zawierająca jasne tła (Surface) i odpowiednio dobrane kolory Brand i Complementary |
+| Dark  | Paleta zawieracą ciemne tła (Surface) i odpowiednio zmodyfikowane kolory Brand i Complementary |
+
+---
+
+  ## Typy kolorów
+
+Kolory design systemie dzielą się na konkretne grupy kolorów
+
+| Typ | Opis |
+|-----|------|
+| Brand | Główna paleta. Tutaj występuje główny kolor wykorzystywany jako kolor brandingu |
+| Complementary  | Paleta kolorów uzupełniająca kolorystykę o najważniejsze kolory np. kolor potwierdzenia, kolor błędu, kolor statusu itp |
+| Surface  | Paleta kolorów stanowiących tło np. tło kart, tło formularzy, tło menu, tło pulpitu itp |
+
+---
+
+  # Kolory Brand
+
+## Lista kolorów Brand w palecie light
+  Niniejsza lista przedstawia konkretne oznaczenia kolorów (#), które stosowane są w design systemie.
+
+primary-120: #1063CD
+primary-100: #186BDC
+primary-80: #4E93F1
+primary-60: #7AAEF4
+primary-40: #D3E4FB
+primary-20: #F5F8FF
+
+---
+
+  ### Wykorzystanie kolorów Brand
+  primary-100: podstawowy kolor przycisków, stan "active"
+  primary-120: kolor przycisków przy stanie "hover"
+  
+
+---
+
+## Accessibility (A11y)
+Ta sekcja opisuje zasady korzystania z kolorów w kontekście dostępności
+- **Kontrast:** Kolory muszą spełniać kontrast 4,5:1 względem koloru na którym się znajdują. 
+---
+
+## Content rules
+  Ta sekcja opisuje zasady korzystania z kolorów w design systemie
+
+- **Dostępnosć:** Brak spełniania kontrastów kolorów Brand i Complementary względem kolorów Surface ma zostać zawsze wskazany jako problem UX
+
+---
+
+## Do & Don’t
+   Ta sekcja opisuje dobre praktyki korzystania z kolorów w design systemie
+
+### ✅ Do
+brak praktyk
+
+
+### ❌ Don’t
+brak praktyk
+
+---
+
+## Powiązania i referencje
+ Ta sekcja opisuje powiązania i zależności kolorów względem innych elementów design systemu
+
+- **Pattern:** Formularz przelewu krajowego (`ADS-patterns-form-krajowy-przelew-v1`)  
+- **Figma:** [Design System UI Kit](https://figma.com/file/asseco123)  
+- **Storybook:** `input--default`  
+- **Kod źródłowy:** `@asseco/ui-input`  
+
+---
+
+**Krótkie podsumowanie (dla RAG):**  
+Plik colors wraz z opisanymi w nim kolorami *Brand*, *Complementary* i *Surface* *Input* definiują sposób tworzenia warstwy kolorystycznej (wizualnej) w aplikacjach Asseco. Plik zawiera wytyczne dot. podziału kolorów, podziału palet, konkretne wartości kolorów, dostępności (WCAG AA). Stosuj jako podstawowy plik zawierający wytyczne dotyczące kolorów i palet.
