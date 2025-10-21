@@ -1,0 +1,152 @@
+---
+id: ADS-components-input-v1
+slug: input
+title: Input — pole do wprowadzania danych
+domain: components
+platforms: [web]
+locale: [pl-PL]
+version: 1.0.0
+status: stable
+last_reviewed: 2025-10-20
+owners: ["design@asseco.com", "frontend@asseco.com"]
+tags: [forms, text-entry, validation, a11y]
+figma_refs: ["FIG:asseco123#node=456"]
+related: [DSC-patterns-form-krajowy-przelew-v1]
+---
+
+**Summary:** Komponent `Input` służy do wprowadzania danych tekstowych i liczbowych w sposób spójny, dostępny i zgodny z zasadami Asseco Design Systemu.
+
+---
+
+## 1. Typy inputów
+
+Wyróżniamy następujące typy pól wprowadzania danych:
+
+| Typ | Opis |
+|-----|------|
+| Tekstowe | standardowe pole do wpisywania danych alfanumerycznych |
+| Numeryczne | pole z walidacją cyfr i separatorów |
+| Numer rachunku bankowego | pole z maską i walidacją IBAN |
+| Kod pocztowy | maska „00-000” |
+| Data | pole z selektorem kalendarza lub maską „dd.mm.rrrr” |
+
+---
+
+## 2. Anatomia komponentu
+
+**Elementy:**
+1. **Label** — opis pola (nad inputem).  
+2. **Field** — kontener z obramowaniem i zaokrągleniami.  
+3. **Input text** — treść wpisywana przez użytkownika.  
+4. **Supporting text** — pomoc lub komunikat błędu (pod polem).
+
+[Label]
+┌───────────────────────────────┐
+│ Input text │
+└───────────────────────────────┘
+Supporting text
+
+
+---
+
+## 3. Layout & Spacing
+
+**Container (cały komponent)**  
+- `flex-direction: column`  
+- `align-items: flex-start`  
+- `gap: 8px`  
+- `width: 280px` *(można nadpisać w siatce/layoutcie)*  
+
+**Label**  
+- `color: #6D708D`
+- `gap: 4px`  
+- `align-self: stretch`
+
+**Field (ramka inputa)**  
+- `border-radius: 8px`  
+- `border: 1px solid #6D708D`  
+- `background: #FFF`  
+- `height: 48px`  
+- `min-height: 44px`
+
+**Input text (wpisywana treść)**  
+- `padding: 0 8px`  
+- `font-size: 14px`  
+- `font-weight: 800`  
+- `color: #242537`
+
+**Placeholder text**  
+- `font-size: 14px`  
+- `font-weight: 400`  
+- `color: #6D708D`
+
+**Supporting text**   
+- `color: #6D708D`
+
+---
+
+## 4. Stany (UX/UI)
+
+| Stan | Obramowanie | Tło | Tekst / Helper | Dodatki |
+|------|--------------|-----|----------------|----------|
+| **Default** | `1px solid #6D708D` | `#FFF` | Label `neutral-600`, Value `neutral-900` | – |
+| **Hover** | `1px solid #565A7A` | `#FFF` | bez zmian | kursor `text` |
+| **Focus** | `1px solid #335CFF` + `outline 0 0 0 2px color-mix(in srgb, #335CFF 20%, transparent)` | `#FFF` | Label `neutral-700` | `transition: 0.15s ease-out`, `z-index: 1` |
+| **Error** | `1px solid #E74C3C` | `#FFF` | Supporting text `danger-700`, ikona ❗ | komunikat w `aria-live` |
+| **Disabled** | `1px solid color-mix(in srgb, #6D708D 40%, #FFF)` | `color-mix(in srgb, #FFF 60%, #6D708D 10%)` | Label/Value `neutral-500` | `cursor: not-allowed` |
+
+**Interakcje:**  
+- Kliknięcie w *Label* ustawia fokus na pole (`for`/`id`).  
+- `Enter` wysyła formularz, jeśli aktywny kontekst to jedyne pole.  
+- Walidacja: `onBlur` oraz `onSubmit`; błędy zawsze w *Supporting text*.  
+
+---
+
+## 5. Accessibility (A11y)
+
+| Zasada | Opis |
+|---------|------|
+| Label association | `id` + `for` lub `aria-labelledby` |
+| Placeholder | nie zastępuje labela |
+| Błędy | komunikaty przez `aria-live=\"polite\"` |
+| Kontrast | tekst i obramowanie ≥ 4.5:1 |
+| Hit area | min. 40px (desktop) / 44px (touch) |
+| Focus ring | nie usuwać outline, kolor wg tokenu `focus` |
+
+---
+
+## 6. Content rules
+
+- **Label:** rzeczowy, opisuje dane („Imię i nazwisko”).  
+- **Placeholder:** pokazuje format („Jan Kowalski”), nie powtarza labela.  
+- **Supporting text:** zwięzły, błędy zaczynaj wprost („Wymagane”, „Niepoprawny format”).  
+- Dla pól wrażliwych (PESEL, hasło) — używaj **toggle mask**.
+
+---
+
+## 7. Do & Don’t
+
+### ✅ Do
+- Stosuj jednoznaczne etykiety i krótkie podpowiedzi.  
+- Utrzymuj jeden akcent kolorystyczny dla focus.  
+- Zapewnij min. 40–44 px wysokości pola.  
+
+### ❌ Don’t
+- Nie używaj samego placeholdera zamiast labela.  
+- Nie łącz informacji i błędów w jednej linii bez koloru/ikony.  
+- Nie ukrywaj komunikatu o błędzie tylko kolorem.
+
+---
+
+## 8. Powiązania i referencje
+
+- **Pattern:** Formularz przelewu krajowego (`ADS-patterns-form-krajowy-przelew-v1`)  
+- **Figma:** [Design System UI Kit](https://figma.com/file/asseco123)  
+- **Storybook:** `input--default`  
+- **Kod źródłowy:** `@asseco/ui-input`  
+
+---
+
+**Krótkie podsumowanie (dla RAG):**  
+Komponent *Input* definiuje sposób tworzenia pól tekstowych i numerycznych w aplikacjach Asseco. Zawiera wytyczne dot. anatomii, stylu, stanów UI, dostępności (WCAG AA), treści oraz interakcji. Stosuj jako podstawowy element w formularzach i procesach bankowych.
+
