@@ -1,0 +1,43 @@
+---
+id: conventions
+title: Konwencje repo i stylu promptów
+scope: global
+version: 1.0
+last_update: 2025-10-22
+---
+
+## Cel
+Zdefiniować wspólne reguły pisania i formatowania promptów dla całego repozytorium, tak aby zachować spójność, czytelność i możliwość efektywnego chunkowania w RAG.
+
+## Zasady językowe
+- Pisz **krótkimi zdaniami** w trybie **imperatywnym**.
+- Unikaj żargonu technicznego — jeśli konieczny, dodaj definicję w `glossary.md`.
+- Każdy plik opisuje **jedno zagadnienie** (nie więcej niż 400 słów na sekcję).
+- Stosuj nagłówki `##` do logicznego podziału treści.
+
+## Format plików
+- Format: `.md` (Markdown) z front‑matter w YAML.
+- Struktura front‑matter:
+  ```yaml
+  ---
+  id: unique_id
+  title: czytelny_tytuł
+  scope: global|screen|flow|domain
+  depends_on: [lista_id]
+  version: 1.0
+  last_update: YYYY-MM-DD
+  ---
+  ```
+- Używaj `{{placeholderów}}` dla elementów kontekstowych (np. `{{ds.component}}`, `{{figma.node}}`).
+
+## Chunkowanie
+- Długość chunku: 200–400 słów.
+- Każda sekcja (`##`) = osobny chunk.
+- Nie łącz różnych kontekstów (np. UI + flow) w jednym pliku.
+
+## Styl formatowania
+- Kluczowe pojęcia pogrubiaj (`**bold**`).
+- Przykłady kodu lub referencji umieszczaj w blokach ``` lub inline `code`.
+- Nie używaj HTML.
+
+---
