@@ -1,0 +1,30 @@
+---
+id: glossary
+title: Słownik pojęć promptowych
+scope: global
+version: 1.0
+last_update: 2025-10-22
+---
+
+## Cel
+Zgromadzić kluczowe terminy i definicje używane w repozytorium promptów RAG.
+
+## Terminy
+**Chunk** – najmniejsza jednostka wiedzy RAG, odpowiadająca jednej sekcji `##` w pliku.
+
+**Design System (DS)** – zbiór reguł wizualnych, komponentów i tokenów używanych w interfejsie.
+
+**Prompt główny** – treść przekazywana do modelu generatywnego (Cursor) w celu utworzenia ekranu lub flow.
+
+**Prompt QA** – prompt walidacyjny, sprawdzający kompletność i zgodność wyników.
+
+**Scope** – zakres użycia pliku (np. `global`, `screen`, `flow`, `domain`).
+
+**Placeholder** – symboliczna zmienna w formacie `{{example}}`, zastępowana kontekstem (np. `{{ds.component}}`).
+
+**Persona** – modelowy użytkownik systemu, określający kontekst interakcji.
+
+**Definition of Done (DoD)** – kryteria uznania projektu lub promptu za kompletny.
+
+---
+
