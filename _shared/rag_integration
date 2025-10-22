@@ -1,0 +1,35 @@
+
+---
+id: rag_integration
+title: Integracja z RAG i składanie promptów
+scope: global
+version: 1.0
+last_update: 2025-10-22
+---
+
+## Cel
+Zdefiniować sposób, w jaki system RAG łączy wiedzę z repozytorium w jeden kompletny prompt do generowania ekranów lub flow.
+
+## Wejścia systemu
+- Zapytanie użytkownika (np. „stwórz ekran logowania”).
+- Kontekst Design Systemu (`{{ds.version}}`, `{{ds.components}}`, `{{ds.tokens}}`).
+- Wiedza domenowa (np. branża, typ aplikacji).
+
+## Proces łączenia
+1. Rozpoznaj **typ promptu** (screen, flow, global, domain).
+2. Pobierz treści z odpowiednich plików `.md`.
+3. Zachowaj kolejność priorytetów:
+   1. `_design_system/*`
+   2. `global/*`
+   3. `screens/*` lub `flows/*`
+   4. `interactions/*`
+   5. `domain/*`
+4. Skonstruuj prompt z następujących sekcji: `Cel`, `Wejścia`, `Wymagania`, `Kroki`, `Wyjścia`, `Kontrola jakości`.
+5. Dodaj referencje DS w postaci kluczy, nie kodu źródłowego.
+
+## Wyjście
+- **Prompt główny** — dla modelu generującego (Cursor).
+- **Prompt QA** — checklista walidacyjna z `quality_checks.md`.
+
+## Uwaga
+RAG nie powinien zmieniać kolejności sekcji. Każdy chunk z pliku `_shared` traktuj jako nadrzędny dla innych źródeł.
