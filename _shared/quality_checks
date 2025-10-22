@@ -1,0 +1,33 @@
+
+---
+id: quality_checks
+title: Kontrole jakości promptów
+scope: global
+version: 1.0
+last_update: 2025-10-22
+---
+
+## Cel
+Dostarczyć zestaw kontroli, które każdy prompt musi przejść przed użyciem w procesie generowania ekranów i flow.
+
+## Checklista ogólna
+- ✅ Cel promptu jest jednoznaczny i mierzalny.
+- ✅ Zdefiniowano platformę (web, iOS, Android, desktop).
+- ✅ Ujęto dane z Design Systemu (`{{ds.*}}`).
+- ✅ Określono kontekst użytkownika (persona, scenariusz, definicja sukcesu).
+- ✅ Zawiera przykładowe dane wejściowe i oczekiwane wyniki.
+
+## Checklista UX/UI
+- ⚙️ Uwzględniono stany (loading, error, success, empty).
+- ⚙️ Zachowany kontrast i dostępność (a11y).
+- ⚙️ Jasne etykiety, hierarchia wizualna, zgodność z DS.
+- ⚙️ Mikro‑kopie są naturalne i jednoznaczne.
+
+## Checklista funkcjonalna
+- 🔄 Przepływy użytkownika są kompletne (początek → koniec).
+- 🔄 Występuje możliwość cofnięcia lub anulowania akcji.
+- 🔄 Dane są walidowane przed wysyłką.
+- 🔄 Ujęto edge‑case’y i błędy systemowe.
+
+## Walidacja końcowa
+Jeśli prompt nie spełnia powyższych kryteriów, powinien zostać oznaczony jako `draft` i nie być wykorzystywany przez agenta do generacji.
