@@ -1,0 +1,35 @@
+# Przykładowy Business Requirements Summary – Portal Partnerów B2B
+
+## 1. Cel projektu
+Nowy portal dla partnerów biznesowych ma zastąpić dotychczasowe rozwiązanie, które nie spełnia wymogów ergonomii i wymaga ręcznej integracji z ERP.
+
+## 2. Tło i kontekst
+Obecny system ma 8 lat, brak jest automatycznego logowania, a proces zamówienia jest wieloetapowy i często powoduje błędy.
+
+## 3. Cele biznesowe
+- Skrócenie czasu składania zamówienia z 5 do 2 minut  
+- Redukcja błędnych formularzy o 50%  
+- Integracja logowania z systemem ERP  
+
+## 4. Użytkownicy i potrzeby
+Partnerzy handlowi (małe i średnie firmy) chcą szybko zamawiać produkty, śledzić statusy i mieć wgląd w faktury bez kontaktu z opiekunem.
+
+## 5. Zakres funkcjonalny
+- Nowy proces logowania (SSO z ERP)
+- Nowy flow zamówienia (3 kroki)
+- Dashboard partnera (historia, statusy, dokumenty)
+- Brak integracji płatności w wersji MVP
+
+## 6. Ryzyka i zależności
+- Potrzebna współpraca z zespołem ERP
+- Ryzyko opóźnień po stronie integratora
+
+## 7. Wskaźniki sukcesu
+- Czas składania zamówienia ≤ 2 minuty
+- < 5% błędnych formularzy
+- 80% partnerów loguje się do nowego portalu w pierwszym kwartale
+
+## 8. Następne kroki
+- Walidacja flow zamówienia z partnerami
+- Makiety UX
+- Test integracji SSO
