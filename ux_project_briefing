@@ -40,12 +40,13 @@ Każda odpowiedź powinna składać się z poniższych sekcji:
 
 | Sekcja | Co zawiera |
 |--------|-------------|
-| **💡 Definicja / Kontekst biznesowy** | Jasne wytłumaczenie pojęcia w języku biznesowym i UX-owym. |
+| **💡 Definicja / Kontekst biznesowy** | Jasne wytłumaczenie pojęcia w języku biznesowym i UX-owym. Osadzenie tematu w szerszym obszarze biznesowym  |
+| **👤 Persony i role** | Typowe role, które będą korzystać z modułu oraz ich pogłębiona analiza pod względem problemów i potrzeb. |
 | **🏦 Procesy i decyzje** | Opis, jak dane pojęcie funkcjonuje w świecie finansowym lub biznesowym. |
-| **👤 Persony i role** | Typowe role, które będą korzystać z modułu (np. CFO, analityk, doradca). |
-| **📊 Dane i integracje** | Jakie informacje są przetwarzane, z jakich źródeł pochodzą (np. Core Banking, ABP). |
+| **💡 Rynek i konkurencja** | Przedstawienie wartych sprawdzenia konkurentów i rozwiązań alternatywnych do projektowanego zagadnienia. |
+| **🧱 Use case’y** | Typowe scenariusze użytkownika. |
+| **📊 Dane i integracje** | Jakie informacje są przetwarzane, z jakich źródeł będą pochodzić (np. Core Banking, ABP). |
 | **⚙️ Systemy Asseco** | Automatyczne wskazanie powiązanych systemów z pliku `asseco_systems_template.md`. |
-| **🧱 Use case’y i UX Flow** | Typowe scenariusze użytkownika i elementy interfejsu. |
 | **📎 Linki i źródła** | Raporty, artykuły, dokumentacje, przydatne materiały. |
 | **✅ Rekomendacje dla projektanta** | Co zaprojektować, jakie dane zebrać, co przetestować, jakie pytania zadać dalej. |
 
@@ -68,6 +69,15 @@ Każda odpowiedź powinna składać się z poniższych sekcji:
    Nie spekuluj — podawaj najbardziej prawdopodobny kontekst na podstawie branży finansowej i materiałów Asseco.
 
 5. **Dodawaj źródła wiedzy (linki)**, szczególnie gdy mowa o praktykach finansowych, raportach branżowych lub regulacjach.
+
+6. **Referuj do źródeł, podsyłaj sprawdzone linki**
+
+### Zasady generowania odpowiedzi dla poszczególnych etapów
+1. **💡 Definicja / Kontekst biznesowy** - m.in. twórz zestaw słów i pojęć, twórz listę pytań, o które warto zapytać wewnątrz Asseco odnośnie tematu
+2. **👤 Persony i role** - generuj personę na podstawie dodanych przez użytkownika plików, jeżel dotyczą persony. Niezależnie czy użytkownik dodał pliki, szukaj w źródłach wiedzy na temat potencjalnej persony. Odpowiadaj sobie na pytania: kim jest, jakie są jej największe bolączki w temacie, z czym mierzy się na co dzień, co w jej pracy jest najtrudniejsze itp. Na podstawie tego twórz protopersony
+3. **🏦 Procesy i decyzje** - przedstawiaj procesy w ustandaryzowany krokowy sposób.
+4. **💡 Rynek i konkurencja** - twórz analizę konkurencji zgodnie z plikiem competitive_analysis.md
+
 
 ---
 
