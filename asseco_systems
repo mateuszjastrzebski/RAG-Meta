@@ -1,0 +1,112 @@
+---
+title: Systemy Asseco – wiedza techniczna i biznesowa
+type: knowledge-base
+version: 1.0
+domain: systems-banking
+status: stable
+locale: pl-PL
+id: KNOW-SYS-ASSECO-01
+tags:
+  - systems
+  - banking
+  - Asseco
+  - core banking
+  - advisory platform
+  - payments
+created_at: 2025-10-30
+updated_at: 2025-10-30
+---
+
+# Systemy Asseco – przegląd i rola w projektach UX  
+Poniższy dokument zawiera zbiór produktów i systemów oferowanych przez Asseco w obszarze bankowo-finansowym.  
+Dla każdego systemu znajdziesz: **Opis**, **Funkcjonalności kluczowe**, **Znaczenie UX-owe**.
+
+---
+
+## 1. Asseco Core Banking  
+**Opis:** System centralny banku (deta­la, korporacja, spółdzielcze) od obsługi rachunków, depozytów, kredytów po płatności.  
+**Funkcjonalności kluczowe:** katalog usług bankowych, transakcje w czasie rzeczywistym, produkty kredytowe, depozyty, systemy płatności, architektura SOA/API.  
+**Znaczenie UX-owe:** Dane transakcyjne pojawiają się w interfejsach użytkownika; projektant musi uwzględnić opóźnienia, błędy, limity; dane muszą być wiarygodne i natychmiast dostępne w interfejsie.
+
+---
+
+## 2. Asseco Advisory Banking Platform (ABP)  
+**Opis:** Platforma dla doradców bankowych, integrująca wiele systemów banku w jednym miejscu, wspierająca obsługę klienta i sprzedaż.  
+**Funkcjonalności kluczowe:** pulpit doradcy, widok 360° klienta, procesy sprzedażowe, obsługa wielu kanałów, workflow.  
+**Znaczenie UX-owe:** Interfejs doradcy musi być intuicyjny, szybko dostępować dane z Core Banking i innych systemów; projektując pulpity i interakcje uwzględniamy integrację z ABP.
+
+---
+
+## 3. Asseco Enterprise Banking Platform (EBP)  
+**Opis:** Platforma bankowości elektronicznej dla firm (MSP/korporacje), umożliwiająca zarządzanie produktami bankowymi online.  
+**Funkcjonalności kluczowe:** konta firmowe, przelewy krajowe i zagraniczne, własne moduły banku, bankowość internetowa i mobilna dla biznesu.  
+**Znaczenie UX-owe:** W projektach dla firm – UX musi umożliwić łatwe zarządzanie finansami, eksport danymi, integrację z ERP; uwzględniać różnorodne role użytkowników.
+
+---
+
+## 4. Asseco cSS – Sales Support System  
+**Opis:** Narzędzie wsparcia sprzedaży produktów i usług bankowych — dla pracowników banku i doradców.  
+**Funkcjonalności kluczowe:** baza klientów, kampanie, zarządzanie ofertą, segmentacja, zarządzanie zadaniami.  
+**Znaczenie UX-owe:** Projektując interfejsy sprzedażowe lub CRM-owe, projektant musi uwzględnić workflow sprzedaży, priorytety, alerty, szybkie akcje.
+
+---
+
+## 5. Asseco Onboarding Platform  
+**Opis:** Platforma umożliwiająca onboarding klienta — identyfikacja, weryfikacja, otwarcie konta, warunki regulacyjne.  
+**Funkcjonalności kluczowe:** weryfikacja KYC/AML, formularze klienta, e-podpis, integracja z zewnętrznymi bazami.  
+**Znaczenie UX-owe:** UX musi być maksymalnie uproszczony; użytkownik często kończy onboarding poza godzinami pracy; ważna jasność, feedback i minimalizacja drop-off.
+
+---
+
+## 6. Asseco Open Banking API (OBA)  
+**Opis:** Platforma API dla bankowości otwartej (PSD2, Open Banking) – umożliwia integrację danych i usług z partnerami trzecimi.  
+**Funkcjonalności kluczowe:** dostęp do rachunków, płatności inicjowane przez TPP, tokeny, bezpieczeństwo, zarządzanie zgodnością.  
+**Znaczenie UX-owe:** Projektując ekosystemy otwartego banku, designer musi rozumieć, że dane mogą pochodzić z wielu źródeł; UX musi budować zaufanie („Dane z integratora”), a UI musi uwzględniać zgodność i zgodę użytkownika.
+
+---
+
+## 7. Asseco Payments / Card Management  
+**Opis:** Moduły do zarządzania płatnościami — krajowymi i zagranicznymi; karty płatnicze; cash-management dla firm.  
+**Funkcjonalności kluczowe:** emisja kart, zarządzanie limitami, rozliczenia, automatyzacje płatności, przelewy zagraniczne, zarządzanie kontem firmowym.  
+**Znaczenie UX-owe:** W UX należy uwzględnić bezpieczeństwo (potwierdzenia, autoryzacje), wielowalutowość, funkcje firmowe; interfejsy muszą być czytelne i zgodne z regulacjami.
+
+---
+
+## 8. Asseco Data Warehouse / BI & Analytics  
+**Opis:** Hurtownie danych i systemy analityczne dla banków — raportowanie, predykcje, wizualizacje danych.  
+**Funkcjonalności kluczowe:** agregacja danych z systemów bankowych, analiza predykcyjna, wizualizacja danych, dashboardy dla zarządu/doradców.  
+**Znaczenie UX-owe:** Jeśli projekt dotyczy widoków analitycznych: wykresów, dashboardów, interakcji z danymi – UX musi uwzględnić skalę danych, aktualność, filtrację, personalizację, szybkość działania.
+
+---
+
+## 9. Asseco Risk Management System (RMS) / Fraud Detection System (FDS)  
+**Opis:** Systemy zarządzania ryzykiem i wykrywania oszustw w bankowości — monitorowanie transakcji, analiza zachowań, alerty riskowe.  
+**Funkcjonalności kluczowe:** scoring transakcji, alerty AML, dashboardy kontrolne, workflow decyzji, raporty compliance.  
+**Znaczenie UX-owe:** W projektach związanych z bezpieczeństwem i ryzykiem – UX musi umożliwiać szybkie decyzje, jasną reprezentację alertów, integrację z danymi transakcyjnymi, dobra widoczność skutków decyzji.
+
+---
+
+## 10. Asseco General Ledger / Back-Office Systems  
+**Opis:** Moduły księgowe i administracyjne banku — prowadzenie ksiąg, raportowanie regulacyjne, zarządzanie produktami i cennikami.  
+**Funkcjonalności kluczowe:** księgi główne, moduły FI/CO, integracja z systemami produktowymi, generowanie raportów dla regulatora.  
+**Znaczenie UX-owe:** W projektach, gdzie użytkownikem końcowym jest pracownik back-office lub analityk — UX musi być bardzo funkcjonalny, przyjazny dla pracy biurowej, wspierać workflow administracyjny.
+
+---
+
+## 🔗 Jak używać tego dokumentu w projekcie UX  
+- Gdy temat projektu dotyczy sektora bankowo-finansowego:  
+  - Projektant lub agent AI przegląda ten dokument i zaznacza, które systemy są zaangażowane w danym przypadku.  
+  - Tworzy w briefie UX sekcję **„Zaangażowane systemy IT”**, w której wypisuje systemy Asseco + ich implikacje UX (np. dane, integracje, opóźnienia).  
+- W trakcie warsztatu discovery:  
+  - Projektant pyta interesariuszy: „Czy dane do predykcji cash-flow pochodzą z Core Banking Asseco?”;  
+  - Agent AI automatycznie identyfikuje potencjalne systemy zaangażowane i sugeruje pytania lub komponenty UX.  
+- Szablon jest **edytywalny** i można go rozbudowywać o kolejne systemy, moduły, wersje i rynki.
+
+---
+
+## ✅ Status i przeznaczenie  
+**Status:** stable – dokument oparty na oficjalnych materiałach Asseco, gotowy do użycia jako część bazy wiedzy w repozytorium projektowym.  
+**Przeznaczenie:** dostarcza projektantom UX oraz agentom AI (tooling RAG) wiedzy o architekturze systemowej bankowości Asseco — co poprawia jakość projektowania, redukuje czas poznania domeny i zmniejsza ryzyko technologicznych niespodzianek.
+
+---
+
