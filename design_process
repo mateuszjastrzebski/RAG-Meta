@@ -1,0 +1,116 @@
+---
+title: Proces projektowy UX – Discovery → Define → Design → Develop → Learn
+type: process-guideline
+version: 1.0
+domain: ux-process
+status: draft
+locale: pl-PL
+id: PROCESS-UX-01
+tags:
+  - ux
+  - proces
+  - projektowanie
+  - discovery
+  - develop
+  - learn
+created_at: 2025-10-30
+updated_at: 2025-10-30
+---
+
+# Proces projektowy UX  
+Ten dokument opisuje nasz standardowy proces projektowy, który pomaga projektantowi UX zrozumieć **co powinien wiedzieć**, **co zbadać**, **na jakie kluczowe elementy zwrócić uwagę**, kiedy dostaje temat — np. „mam do zaprojektowania obszar biznesowy finansowy o nazwie cashflow predictions. Nie jestem pewien co to jest”.
+
+Proces podzielony jest na pięć głównych faz:
+
+1. **Discovery & Research**  
+2. **Define**  
+3. **Design**  
+4. **Develop**  
+5. **Learn**
+
+---
+
+## 1. Discovery & Research  
+### Co projektant powinien zrobić:  
+- Zrozumieć **stan obecny**: jakie są obecne procesy, systemy, dane, ograniczenia.  
+- Przeprowadzić badania wstępne: zespół biznesowy, użytkownicy, dane (analizy), benchmark konkurencji.  
+- Zadać pytania typu: „Co oznacza ‘cashflow predictions’? Jak to ma działać w dziale finansowym? Jakie decyzje są podejmowane na podstawie tych prognoz?”  
+- Zebrać kluczowe dokumenty i raporty, mapę procesów, listę systemów zaangażowanych.
+
+### Rezultat fazy:  
+- Mapa podróży użytkownika / procesu  
+- Lista kluczowych pain-points / wyzwań  
+- Zestaw dokumentów systemowych i biznesowych (np. raporty finansowe, integracje)  
+- Wstępna hipoteza zakresu i wymagań
+
+---
+
+## 2. Define  
+### Co projektant powinien zrobić:  
+- Na podstawie danych z Discovery zdefiniować obszar projektu: co wchodzi w zakres, co nie.  
+- Określić **persony** użytkowników oraz use-case’y.  
+- Zidentyfikować kluczowe systemy (np. core banking, business intelligence) zaangażowane w rozwiązanie.  
+- Określić wymagania biznesowe, techniczne i UX (np. interfejs, dane, integracje).  
+- Ustalić wskaźniki sukcesu (KPI) oraz ryzyka/założenia.
+
+### Rezultat fazy:  
+- Brief UX / Business Requirements Document  
+- Specyfikacja zakresu projektu  
+- Priorytety funkcjonalności i roadmapa
+
+---
+
+## 3. Design  
+### Co projektant powinien zrobić:  
+- Stworzyć makiety/prototypy niskiej i średniej wierności.  
+- Zaaranżować interakcje UI, przepływy użytkownika, dane z systemów backendowych.  
+- Upewnić się, że projekt uwzględnia integracje z systemami (np. dane z core banking, dane prognostyczne cashflow).  
+- Przeprowadzić wstępne testy z użytkownikami lub interesariuszami.
+
+### Rezultat fazy:  
+- Makiety/prototypy  
+- Specyfikacja UI/UX (zestaw komponentów, heurystyki, accessibility)  
+- Dokumentacja integracji (backend/frontend) jako część UX briefu
+
+---
+
+## 4. Develop  
+### Co projektant powinien zrobić:  
+- Przekazać przygotowane makiety i specyfikacje zespołowi developerskiemu.  
+- Wspierać implementację: review UI, wspierać testy, walidację danych z systemów.  
+- Udział w testach akceptacyjnych i UAT (User Acceptance Testing).
+
+### Rezultat fazy:  
+- Gotowy produkt lub wersja MVP  
+- Dokumentacja wdrożeniowa i przekazanie do produkcji
+
+---
+
+## 5. Learn  
+### Co projektant powinien zrobić:  
+- Zbierać dane eksploatacyjne: analiza KPI, feedback użytkowników, błędy, logi.  
+- Przeprowadzić retrospektywy: co poszło dobrze, co można poprawić.  
+- Wspierać iterację: kolejne wersje, refinements.
+
+### Rezultat fazy:  
+- Raport „lessons learned”  
+- Plan iteracji lub roadmapa wersji 2.0
+
+---
+
+## 🔗 Powiązania w repozytorium  
+| Plik | Opis |
+|------|------|
+| `prompts/business_requirements.md` | Instrukcja dla agenta – zadawanie pytań i generowanie BRD |
+| `prompts/user_research.md` | Lista pytań jakościowych do użytkowników i stakeholderów |
+| `knowledge/systems/asseco_systems_template.md` | Template wiedzy o systemach Asseco i ich roli w projekcie |
+| `design_system/components-guidelines.md` | Zasady projektowania UI i komponentów korzystające z wyników procesu |
+
+---
+
+## ✅ Status i przeznaczenie  
+**Status:** draft – gotowy do użycia, ale może wymagać adaptacji do kontekstu konkretnego zespołu/projektu.  
+**Przeznaczenie:** narzędzie wspierające projektanta UX oraz agenta AI w prowadzeniu i dokumentowaniu procesu projektowego — od briefu przez design po wdrożenie i uczenie się.  
+Może być wykorzystany w warsztatach, zadaniach discovery oraz jako część procesu Agile/UX.
+
+---
