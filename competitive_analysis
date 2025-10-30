@@ -1,0 +1,160 @@
+---
+title: Competitive Analysis – AI Research Guidelines
+type: research-guideline
+version: 1.0
+domain: ux-research
+status: stable
+locale: pl-PL
+id: RESEARCH-COMPETITIVE-01
+tags:
+  - ux
+  - research
+  - competitive analysis
+  - benchmarking
+  - product design
+created_at: 2025-10-30
+updated_at: 2025-10-30
+---
+
+# 🔍 Wytyczne do tworzenia analizy konkurencji (Competitive Analysis)
+
+Ten plik definiuje sposób, w jaki agent AI ma przygotowywać **analizę konkurencji** przydatną projektantowi UX, product designerowi lub strategowi.  
+Celem analizy jest szybkie dostarczenie **wiedzy kontekstowej o rynku, trendach, funkcjach i wzorcach UX**, tak aby projektant mógł od razu przejść do ideacji i prototypowania.
+
+---
+
+## 🎯 Cel agenta
+
+Asystent AI ma:
+1. Wykonać szybki **research rynkowy** w kontekście produktu, branży lub funkcji, które projektant wskazał.  
+2. Zidentyfikować **3–6 kluczowych konkurentów lub analogicznych rozwiązań**.  
+3. Przedstawić **analizę jakościową (UX, UI, funkcje, modele biznesowe)**.  
+4. Zestawić wyniki w **tabeli porównawczej**.  
+5. Zakończyć raportem – **podsumowaniem strategicznym** z rekomendacjami dla projektanta.
+
+---
+
+## 🧩 Struktura analizy (output agenta)
+
+Każda analiza powinna składać się z następujących sekcji:
+
+| Sekcja | Opis |
+|--------|------|
+| **1️⃣ Kontekst i cel analizy** | Dlaczego analizujemy ten rynek / produkt. |
+| **2️⃣ Lista konkurentów / benchmarków** | 3–6 produktów lub usług podobnych tematycznie. |
+| **3️⃣ Opis każdego konkurenta** | Krótkie streszczenie (charakterystyka, target, unikalność). |
+| **4️⃣ Analiza porównawcza (tabela)** | Porównanie kluczowych cech: funkcje, UX/UI, model, innowacje. |
+| **5️⃣ Wnioski i rekomendacje projektowe** | Co warto zaadaptować, co poprawić, jakie są luki na rynku. |
+| **6️⃣ Źródła i linki** | Linki do stron, raportów, artykułów branżowych. |
+
+---
+
+## 🧠 Zasady przygotowania analizy przez AI
+
+1. **Uwzględnij kontekst branżowy i biznesowy**  
+   - AI ma rozumieć, że projekt dotyczy np. *fintechu, bankowości, zdrowia, edukacji* — i analizować konkurencję w tym obszarze.  
+
+2. **Zachowaj balans między UX a biznesem**  
+   - Analiza ma wskazywać zarówno rozwiązania funkcjonalne (np. „Cashflow forecast”), jak i cechy UX (np. „dashboard, wizualizacje danych, personalizacja”).  
+
+3. **Wyróżnij dobre praktyki UX/UI**  
+   - Agent wskazuje wzorce (design patterns) stosowane przez konkurencję, np. *progressive disclosure, data visualization, gamification*.  
+
+4. **Identyfikuj braki i szanse (white spaces)**  
+   - Co konkurencja robi dobrze, czego brakuje, gdzie można wprowadzić innowacje.  
+
+5. **Uwzględniaj modele biznesowe i kanały**  
+   - Czy produkt jest B2C, B2B, SaaS, mobilny, webowy; czy jest subskrypcyjny, darmowy, partnerski itd.  
+
+6. **Prezentuj dane w ustrukturyzowanej formie**  
+   - AI ma zawsze tworzyć **tabelę porównawczą** oraz **krótkie podsumowanie** w punktach.  
+
+---
+
+## 🧱 Struktura tabeli porównawczej
+
+Agent powinien stosować poniższy format, który pozwala na szybkie zestawienie konkurentów:
+
+| Produkt / Usługa | Opis | Kluczowe funkcje | UX/UI charakterystyka | Model biznesowy | Mocne strony | Słabe strony |
+|------------------|------|------------------|-----------------------|-----------------|---------------|--------------|
+
+---
+
+## 📋 Przykład użycia
+
+### 🔹 Input użytkownika:
+> „Przygotuj analizę konkurencji dla narzędzi do prognozowania przepływów finansowych (cashflow forecasting) w sektorze fintech i bankowości.”
+
+### 🔹 Output agenta:
+
+---
+
+### 1️⃣ Kontekst i cel analizy
+Celem analizy jest zrozumienie, jak rozwiązania z obszaru **cashflow forecasting** wspierają planowanie finansowe firm i klientów indywidualnych.  
+Analiza skupia się na produktach fintechowych i bankowych, które automatyzują prognozy finansowe, integrując dane z kont bankowych i ERP.
+
+---
+
+### 2️⃣ Konkurenci / benchmarki
+- **Tink (Visa)** – API dla integracji finansowych i predykcji cashflow  
+- **Fintonic** – aplikacja mobilna do zarządzania wydatkami i budżetem  
+- **Yolt Business** – narzędzie do cashflow management dla małych firm  
+- **Intuit QuickBooks Cashflow Planner** – funkcja predykcji płynności w systemie księgowym  
+- **Asseco ABP (Advisory Banking Platform)** – moduły raportowe i doradcze  
+
+---
+
+### 3️⃣ Analiza porównawcza
+
+| Produkt / Usługa | Opis | Kluczowe funkcje | UX/UI charakterystyka | Model biznesowy | Mocne strony | Słabe strony |
+|------------------|------|------------------|-----------------------|-----------------|---------------|--------------|
+| **Tink (Visa)** | Platforma API do analizy finansów klientów i firm | API, predykcje cashflow, scoring, agregacja danych | minimalistyczny interfejs developerski, gotowe komponenty | B2B SaaS | integracja z bankami, wiarygodność danych | brak własnego UI |
+| **Fintonic** | Aplikacja do zarządzania osobistymi finansami | automatyczne klasyfikowanie wydatków, alerty, budżety | kolorowa, gamifikowana, silny UX mobile | freemium (reklamy + premium) | prostota, UX-mobile-first | ograniczone dane dla firm |
+| **Yolt Business** | Narzędzie cashflow dla MSP | raporty, faktury, alerty o saldach, synchronizacja ERP | nowoczesny dashboard, personalizacja | freemium B2B | integracja ERP + bank | brak analityki predykcyjnej |
+| **QuickBooks Cashflow Planner** | Moduł predykcji w QuickBooks | prognozy oparte na historii transakcji, wykresy, alerty | prosty interfejs w stylu dashboard accounting | subskrypcja | integracja z księgowością | brak danych bankowych realtime |
+| **Asseco ABP** | Moduł doradczy banku | wizualizacja cashflow, scenariusze, integracja z Core Banking | interfejs doradcy, dane 360° | B2B bankowe | integracja, zaufanie | brak samodzielnej aplikacji |
+
+---
+
+### 4️⃣ Wnioski i rekomendacje projektowe
+
+**Wnioski:**
+- Produkty B2C stawiają na prostotę i wizualizacje (np. Fintonic).  
+- B2B integrują dane z ERP i banków (Yolt, Tink, QuickBooks).  
+- Asseco ABP może być mocnym punktem dla bankowości korporacyjnej – warto rozwinąć UX wizualizacji i interakcji scenariuszowych.  
+
+**Rekomendacje dla projektanta:**
+- Skupić się na *personalizacji i scenariuszach finansowych*.  
+- Wprowadzić elementy predykcji AI z prostym UX.  
+- Wykorzystać integracje ABP i Core Banking w projekcie, aby dane były real-time.  
+- Wykonać benchmarking wizualizacji danych (kolorystyka, alerty, timeline).  
+
+---
+
+### 5️⃣ Źródła
+- [https://tink.com](https://tink.com)  
+- [https://www.fintonic.com](https://www.fintonic.com)  
+- [https://www.yolt.com/business](https://www.yolt.com/business)  
+- [https://quickbooks.intuit.com](https://quickbooks.intuit.com)  
+- [https://abp.asseco.com](https://abp.asseco.com)  
+
+---
+
+## 🧩 Relacje z innymi plikami
+
+| Plik | Opis |
+|------|------|
+| `prompts/business_requirements.md` | Pomaga zrozumieć cele biznesowe i problemy, które analiza ma rozwiązać |
+| `knowledge/systems/asseco_systems_template.md` | Pomaga rozpoznać, które systemy Asseco są zaangażowane w konkurencyjne produkty |
+| `process/ux_project_briefing.md` | Łączy wyniki analizy konkurencji z kontekstem projektowym |
+| `design_system/components-guidelines.md` | Umożliwia adaptację dobrych praktyk UI z benchmarków |
+
+---
+
+## ✅ Status i przeznaczenie
+**Status:** stable – gotowe do użytku z agentami RAG / Flowise.  
+**Przeznaczenie:**  
+Dokument definiuje sposób, w jaki AI ma tworzyć **analizy konkurencji UX/produktowe**, by wspierać projektanta w fazie **Discovery / Define**.  
+Efekt końcowy to **szybkie, strukturalne porównanie rynkowe + podsumowanie rekomendacji projektowych**.
+
+---
