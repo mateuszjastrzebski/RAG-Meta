@@ -1,0 +1,213 @@
+---
+title: Metody Discovery i Research dla UX
+type: research-guideline
+version: 1.0
+domain: ux-research
+status: stable
+locale: pl-PL
+id: RESEARCH-DISCOVERY-01
+tags:
+  - ux
+  - research
+  - discovery
+  - metodologia
+  - user research
+  - analizy
+created_at: 2025-10-30
+updated_at: 2025-10-30
+---
+
+# 🔍 Metody Discovery i Research dla projektów UX
+
+Ten dokument opisuje **metody badawcze i analityczne**, które AI lub projektant UX powinien stosować w fazie **Discovery & Research**.  
+Celem jest zrozumienie *co badamy, dlaczego, jak to robić krok po kroku*, oraz jak przekształcać wyniki badań w konkretne insighty projektowe.
+
+---
+
+## 🎯 Cel agenta AI
+Asystent ma:
+1. Rozpoznać, jakie badania są odpowiednie dla etapu projektu.  
+2. Przeprowadzić (lub zasymulować) analizę krok po kroku.  
+3. Wygenerować wyniki badań w formie podsumowania, tabeli lub listy insightów.  
+4. Zasugerować kolejne kroki (np. persony, mapy, hipotezy).  
+
+Agent może używać tych metod zarówno:
+- **samodzielnie (autonomiczny research)** – na podstawie promptu, danych i repozytorium,  
+- **wspólnie z projektantem** – jako struktura warsztatu lub checklisty.
+
+---
+
+## 🧩 Struktura metody
+Każda metoda opisana jest w formacie:
+
+- **Cel badania:** po co się je wykonuje.  
+- **Dane wejściowe:** co AI/projektant potrzebuje, by rozpocząć.  
+- **Kroki postępowania:** instrukcja krok po kroku.  
+- **Wynik:** jak wygląda efekt badania (np. mapa, tabela, insighty).  
+- **Kiedy używać:** typowe momenty zastosowania w procesie UX.  
+
+---
+
+## 📚 Główne metody Discovery i Research
+
+---
+
+### 1️⃣ Desk Research (badania wtórne)
+
+**Cel:** szybkie zrozumienie kontekstu projektu, rynku, użytkowników i trendów.  
+**Dane wejściowe:** temat projektu, słowa kluczowe, dostępne raporty, artykuły, dane wewnętrzne.  
+**Kroki postępowania:**  
+1. Zidentyfikuj wiarygodne źródła (np. raporty branżowe, artykuły naukowe, dane klienta).  
+2. Zbierz podstawowe informacje: kto, co, dlaczego, jak często.  
+3. Zanotuj powtarzające się pojęcia, wartości i problemy.  
+4. Stwórz krótkie streszczenie (300–600 słów) lub tabelę trendów.  
+**Wynik:** notatka kontekstowa, lista trendów, cytaty branżowe, mapa pojęć.  
+**Kiedy używać:** zawsze na początku projektu (Discovery), przed wywiadami i analizą danych.
+
+---
+
+### 2️⃣ Stakeholder Interview (rozmowy z interesariuszami)
+
+**Cel:** zrozumienie perspektywy biznesu, strategii, problemów i oczekiwań.  
+**Dane wejściowe:** lista osób, rola w organizacji, opis projektu.  
+**Kroki postępowania:**  
+1. Przygotuj listę 6–10 pytań (cel, sukces, problemy, ograniczenia, KPI).  
+2. Przeprowadź wywiad (AI może symulować odpowiedzi lub streszczać nagrania).  
+3. Zidentyfikuj konflikty lub rozbieżności w celach.  
+4. Utwórz tabelę: „Oczekiwania – Bariery – Szanse”.  
+**Wynik:** tabela insightów biznesowych, cytaty stakeholderów, zrozumienie priorytetów.  
+**Kiedy używać:** Discovery, Define (przed tworzeniem wymagań i person).
+
+---
+
+### 3️⃣ User Interview (badania jakościowe z użytkownikami)
+
+**Cel:** poznanie potrzeb, motywacji, frustracji i kontekstu użycia produktu.  
+**Dane wejściowe:** segmenty użytkowników, scenariusz rozmowy, pytania otwarte.  
+**Kroki postępowania:**  
+1. Określ grupę docelową (np. CFO, doradcy, klienci indywidualni).  
+2. Przygotuj zestaw 8–12 pytań otwartych.  
+3. Zbierz dane jakościowe (notatki, cytaty, obserwacje).  
+4. Zgrupuj wyniki w kategorie: potrzeby / bóle / nawyki.  
+**Wynik:** lista insightów, cytaty użytkowników, mapa empatii.  
+**Kiedy używać:** Discovery – przed tworzeniem person i scenariuszy.
+
+---
+
+### 4️⃣ Competitive Analysis (analiza konkurencji)
+
+**Cel:** porównanie produktu z konkurencją i zrozumienie wzorców UX/UI.  
+**Dane wejściowe:** lista konkurentów, linki, screenshots, opisy.  
+**Kroki postępowania:**  
+1. Wybierz 3–6 konkurentów (AI może je znaleźć automatycznie).  
+2. Zidentyfikuj funkcje, UI, model biznesowy, komunikację.  
+3. Utwórz tabelę porównawczą (zob. `competitive_analysis.md`).  
+4. Podsumuj dobre praktyki i luki rynkowe.  
+**Wynik:** tabela porównawcza + raport rekomendacji.  
+**Kiedy używać:** Discovery i Define – jako kontekst dla ideacji.
+
+---
+
+### 5️⃣ Process Mapping (mapa procesu / journey mapping)
+
+**Cel:** zrozumienie, jak obecnie użytkownik realizuje zadanie lub proces.  
+**Dane wejściowe:** dane z wywiadów, obserwacji, dokumentacji.  
+**Kroki postępowania:**  
+1. Zidentyfikuj kroki, które użytkownik podejmuje w obecnym systemie.  
+2. Zmapuj punkty kontaktu (systemy, kanały, osoby).  
+3. Dodaj emocje lub oceny (pozytywne/negatywne momenty).  
+4. Oznacz miejsca z problemami (pain points).  
+**Wynik:** wizualna mapa procesu (tekstowa lub graficzna) + opis wniosków.  
+**Kiedy używać:** po wstępnym researchu, przed ideacją.
+
+---
+
+### 6️⃣ Data Analysis (analiza ilościowa / behawioralna)
+
+**Cel:** identyfikacja trendów, błędów i wzorców zachowań użytkowników.  
+**Dane wejściowe:** dane z Google Analytics, CRM, heatmap, logów.  
+**Kroki postępowania:**  
+1. Zbierz dane i wskaźniki (np. czas sesji, drop-off, CTR).  
+2. Zidentyfikuj wzorce zachowań (np. najczęstsze ścieżki, punkty frustracji).  
+3. Przypisz dane do scenariuszy użytkowników.  
+4. Zapisz 3–5 insightów liczbowych, które potwierdzają lub obalają hipotezy.  
+**Wynik:** raport danych ilościowych, wykresy, KPI, rekomendacje.  
+**Kiedy używać:** w projektach z istniejącym produktem lub danymi historycznymi.
+
+---
+
+### 7️⃣ Hypothesis Workshop (warsztat hipotez)
+
+**Cel:** przekształcenie insightów w hipotezy projektowe.  
+**Dane wejściowe:** wyniki badań (Desk, Interviews, Data).  
+**Kroki postępowania:**  
+1. Spisz kluczowe problemy użytkowników i cele biznesowe.  
+2. Zamień je w hipotezy w formacie:  
+   „Wierzymy, że [zmiana/projekt] pomoże [grupie] osiągnąć [efekt], ponieważ [powód].”  
+3. Oceń każdą hipotezę wg kryteriów: wpływ / pewność / koszt.  
+4. Zapisz top 3–5 hipotez do walidacji w fazie Design.  
+**Wynik:** lista hipotez + priorytetyzacja.  
+**Kiedy używać:** na końcu Discovery, przed Define.
+
+---
+
+### 8️⃣ Persona Creation (tworzenie person)
+
+**Cel:** modelowanie archetypów użytkowników.  
+**Dane wejściowe:** dane z wywiadów, analizy, ankiet.  
+**Kroki postępowania:**  
+1. Grupuj użytkowników według celów, zachowań i frustracji.  
+2. Dla każdej grupy opisz: cel, motywację, bariery, cytat.  
+3. Dodaj informacje kontekstowe: rola, doświadczenie, kanały.  
+4. Stwórz 2–4 kluczowe persony.  
+**Wynik:** karty person (tekstowo lub wizualnie).  
+**Kiedy używać:** po analizie jakościowej (User Interviews, Data).
+
+---
+
+### 9️⃣ Problem Framing (definiowanie problemu)
+
+**Cel:** jasne zdefiniowanie wyzwania projektowego, które ma być rozwiązane.  
+**Dane wejściowe:** insighty, dane, hipotezy.  
+**Kroki postępowania:**  
+1. Zbierz wszystkie zidentyfikowane problemy.  
+2. Grupuj według tematu / typu użytkownika.  
+3. Stwórz zdanie problemowe:  
+   „[Użytkownik X] ma problem z [czynnością Y], ponieważ [przyczyna Z].”  
+4. Oceń istotność problemu i jego wpływ na cel biznesowy.  
+**Wynik:** 1–3 sformułowania problemów do rozwiązania.  
+**Kiedy używać:** zakończenie fazy Discovery – wejście w Define.
+
+---
+
+## 📋 Przykład użycia agenta
+> „Zacznij badanie Discovery dla projektu *Cashflow Predictions*. Wykonaj Desk Research, Competitive Analysis i Process Mapping.  
+> Wygeneruj podsumowanie i rekomendacje UX.”
+
+**AI powinien:**
+1. Zebrać dane kontekstowe (Desk Research).  
+2. Zidentyfikować konkurencję (Competitive Analysis).  
+3. Opracować mapę procesu (Process Mapping).  
+4. Zakończyć raportem z insightami i tabelą porównawczą.
+
+---
+
+## 🔗 Powiązania w repozytorium
+
+| Plik | Opis |
+|------|------|
+| `research/competitive_analysis.md` | Uzupełnienie metody 4 – analiza konkurencji |
+| `process/ux_project_process.md` | Główny proces projektowy, który odnosi się do tego pliku |
+| `prompts/user_research.md` | Szczegółowe pytania do badań jakościowych |
+| `prompts/business_requirements.md` | Pomoc przy definiowaniu celów biznesowych w Discovery |
+| `ux_project_briefing.md` | Kontekst biznesowy i systemowy projektu |
+
+---
+
+## ✅ Status i przeznaczenie
+**Status:** stable  
+**Przeznaczenie:**  
+Plik stanowi instrukcję dla AI (RAG / Flowise) i projektanta UX, jak przeprowadzać badania i analizę Discovery w sposób ustrukturyzowany i powtarzalny.  
+Agent AI powinien automatycznie wybierać odpowiednie metody w zależności od typu projektu (np. finansowy → Desk + Competitive + Process Mapping + Hypothesis Workshop).
+
+---
