@@ -30,6 +30,9 @@ Etapy procesu:
 4. **Develop**  
 5. **Learn**
 
+### Słownik
+Na początku analizy zbuduj słownik pojęć. Każdy akronim powinien posiadać rozwinięcie skrótu w tabelce, krótkie wyjaśnienie co to jest i link do źródła, gdzie można więcej o tym poczytać.
+
 ---
 
 ## 1️⃣ Discovery & Research  
@@ -159,16 +162,17 @@ Analiza działania produktu po wdrożeniu i planowanie iteracji.
 - Lista rekomendacji iteracyjnych  
 - Plan wersji 2.0
 
+
 ---
 
 ## 🔗 Powiązania w repozytorium  
 | Plik | Opis |
 |------|------|
-| `design process/01. Discovery.md` | Szczegółowe instrukcje i metody badań Discovery |
-| `design process/02. Define.md` | Metody warsztatowe i definiowania celów projektu |
-| `design process/03. Design.md` | Metody ideacji, projektowania, testowania i dokumentacji |
-| `design process/04. Develop.md` | Metody wdrożenia i testów QA UX |
-| `design process/05. Learn.md` | Metody ewaluacji i iteracji produktu |
+| `design%20process/01.%20Discovery.md` | Szczegółowe instrukcje i metody badań Discovery |
+| `design%20process/02.%20Define.md` | Metody warsztatowe i definiowania celów projektu |
+| `design%20process/03.%20Design.md` | Metody ideacji, projektowania, testowania i dokumentacji |
+| `design%20process/04.%20Develop.md` | Metody wdrożenia i testów QA UX |
+| `design%20process/05.%20Learn.md` | Metody ewaluacji i iteracji produktu |
 | `research/business_requirements.md` | Pomoc przy przekształcaniu danych w BRD |
 | `asseco_systems.md` | Informacje o systemach Asseco |
 | `...` | Zasady projektowania UI |
