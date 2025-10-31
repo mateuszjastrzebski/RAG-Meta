@@ -1,0 +1,102 @@
+---
+title: Metody Develop – Wdrożenie, współpraca, testy i kontrola jakości UX
+type: research-guideline
+version: 1.0
+domain: ux-develop
+status: stable
+locale: pl-PL
+id: RESEARCH-DEVELOP-01
+tags:
+  - develop
+  - handoff
+  - implementation
+  - qa
+  - collaboration
+created_at: 2025-10-31
+updated_at: 2025-10-31
+---
+
+# ⚙️ Metody Develop – Wdrożenie, współpraca, testy i kontrola jakości UX
+
+Ten dokument opisuje, jak projektant i AI wspierają zespół deweloperski po zakończeniu fazy Design, aby zapewnić zgodność projektu z intencją UX oraz jego poprawne wdrożenie.
+
+---
+
+## 🎯 Cel agenta AI
+Asystent ma:
+1. Pomóc w **przekazaniu projektu** do developmentu.  
+2. Wspierać weryfikację poprawności implementacji (UI, dane, logika).  
+3. **Zwracać wyniki kontroli** i checklisty testowe.  
+4. Zapewnić spójność z design systemem i danymi źródłowymi.
+
+---
+
+## 📚 Główne metody Develop
+
+---
+
+### 1️⃣ Design Handoff (przekazanie projektu)
+**Cel:** dostarczenie deweloperom pełnej dokumentacji.  
+**Kroki:**
+1. AI generuje pakiet: style, komponenty, interakcje, dane.  
+2. Tworzy checklistę przekazania.  
+3. Ocenia kompletność (np. brakujące stany, fonty, ikony).  
+**Wynik:** dokumentacja handoff (tekst / JSON).  
+**Kiedy:** początek Develop.
+
+---
+
+### 2️⃣ Implementation Review (przegląd implementacji)
+**Cel:** sprawdzić, czy wdrożenie odzwierciedla projekt.  
+**Kroki:**
+1. Porównaj projekt vs kod (komponenty, spacing, kolory).  
+2. AI wykrywa rozbieżności i raportuje błędy.  
+**Wynik:** lista niezgodności.  
+**Kiedy:** w trakcie developmentu.
+
+---
+
+### 3️⃣ QA UX Checklist (kontrola jakości)
+**Cel:** zapewnić zgodność UX z założeniami projektu.  
+**Kroki:**
+1. AI stosuje checklistę (responsywność, dostępność, stany).  
+2. Tworzy raport „passed / failed” dla każdego ekranu.  
+**Wynik:** raport QA UX.  
+**Kiedy:** po wdrożeniu lub w UAT.
+
+---
+
+### 4️⃣ UAT – User Acceptance Testing
+**Cel:** walidacja projektu z użytkownikami końcowymi.  
+**Kroki:**
+1. Zdefiniuj scenariusze testowe.  
+2. Zbierz feedback od testerów.  
+3. AI analizuje odpowiedzi i ocenia zgodność z celami UX.  
+**Wynik:** tabela wyników + rekomendacje poprawek.  
+**Kiedy:** koniec Develop.
+
+---
+
+### 5️⃣ Release Notes & Documentation
+**Cel:** dokumentacja funkcji, zmian i wersji produktu.  
+**Kroki:**
+1. AI generuje opis zmian (co nowego, poprawionego).  
+2. Tworzy podsumowanie dla zespołu i interesariuszy.  
+**Wynik:** changelog i raport wdrożeniowy.  
+**Kiedy:** po release.
+
+---
+
+## 🔗 Powiązania
+| Plik | Opis |
+|------|------|
+| `research/design_methods.md` | Dane wejściowe (specyfikacja UX) |
+| `design_system/components-guidelines.md` | Punkty odniesienia do weryfikacji |
+| `process/design_process.md` | Faza Develop odwołuje się do tego pliku |
+
+---
+
+## ✅ Status
+**stable** – AI ma wspierać implementację i testy oraz **zwracać raporty QA, checklisty i dokumentacje handoff**.
+
+---
