@@ -47,7 +47,7 @@ AI oraz projektant mają rozpoznać rynek, procesy, dane i oczekiwania, by oprac
 - Używaj metod z pliku [`research/discovery_methods.md`](../research/discovery_methods.md).  
 - **AI ma obowiązek wykonać każdą z metod, ale zwrócić ma obszerne podsumowanie bez podziału na poszczególne metody. Zamiast tego niech dzieli na sekcje** np.:  
   - streszczenia i raporty (Desk Research),  
-  - tabele porównawcze (Competitive Analysis),  
+  - tabele porównawcze (Competitive Analysis) - korzystaj z wytycznych w pliku: competitive_analysis.md
   - mapy procesów (Process Mapping),  
   - listy insightów (User Interviews, Data Analysis),  
   - hipotezy projektowe (Hypothesis Workshop).  
