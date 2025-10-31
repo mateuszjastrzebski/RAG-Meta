@@ -1,0 +1,150 @@
+---
+title: Metody Design – Ideacja, prototypowanie, testowanie i dokumentacja UX/UI
+type: research-guideline
+version: 1.0
+domain: ux-design
+status: stable
+locale: pl-PL
+id: RESEARCH-DESIGN-01
+tags:
+  - ux
+  - design
+  - ideation
+  - prototyping
+  - usability
+  - testing
+created_at: 2025-10-31
+updated_at: 2025-10-31
+---
+
+# 🎨 Metody Design – Ideacja, prototypowanie, testowanie i dokumentacja UX/UI
+
+Ten dokument definiuje metody stosowane w fazie **Design**, czyli moment, w którym pomysły i hipotezy z etapu Define są przekuwane w konkretne rozwiązania – od szkiców po prototypy i testy z użytkownikami.
+
+---
+
+## 🎯 Cel agenta AI
+Asystent ma:
+1. Na podstawie danych z Define generować **idee projektowe, makiety, przepływy i prototypy**.  
+2. Uruchamiać metody projektowe (z listy poniżej).  
+3. **Zwracać wyniki** w postaci wizualnych opisów, list funkcjonalności, flow lub feedbacku z testów.  
+4. Łączyć wyniki z `design_system/components-guidelines.md`, aby zachować spójność stylistyczną i semantyczną.
+
+---
+
+## 📚 Główne metody Design
+
+---
+
+### 1️⃣ Ideation Session (generowanie pomysłów)
+**Cel:** tworzenie szerokiego zestawu potencjalnych rozwiązań.  
+**Kroki:**
+1. Zbierz dane z Define (problemy, cele, metryki).  
+2. AI generuje 5–10 koncepcji odpowiadających na zidentyfikowane problemy.  
+3. Grupuj pomysły wg tematu, skali innowacji lub ryzyka.  
+**Wynik:** lista idei + tabela korzyści / ryzyk.  
+**Kiedy:** początek fazy Design.
+
+---
+
+### 2️⃣ Information Architecture (architektura informacji)
+**Cel:** ustalenie hierarchii treści i nawigacji.  
+**Kroki:**
+1. Zbierz wszystkie ekrany i funkcje.  
+2. AI tworzy strukturę drzewka nawigacji.  
+3. Ocenia logiczność (ilość kliknięć, dostępność, priorytety).  
+**Wynik:** mapa IA + tabela hierarchii.  
+**Kiedy:** po ideacji.
+
+---
+
+### 3️⃣ User Flow Mapping (mapowanie przepływów użytkownika)
+**Cel:** opisanie ścieżek użytkownika przez system.  
+**Kroki:**
+1. Dla każdego scenariusza utwórz ścieżkę krok po kroku.  
+2. Oznacz decyzje, punkty bólu i alternatywy.  
+3. AI generuje tekstową mapę flow lub wizualny opis.  
+**Wynik:** user flow + identyfikacja kluczowych punktów UX.  
+**Kiedy:** przed prototypowaniem.
+
+---
+
+### 4️⃣ Wireframing (makiety niskiej i średniej wierności)
+**Cel:** wizualizacja koncepcji i struktury ekranów.  
+**Kroki:**
+1. AI opisuje layout w formacie tekstowym lub JSON (np. RAG → Cursor).  
+2. Dodaje komponenty z `design_system`.  
+3. Tworzy warianty makiet (A/B).  
+**Wynik:** zestaw layoutów / struktur ekranów.  
+**Kiedy:** środek fazy Design.
+
+---
+
+### 5️⃣ Prototyping (interaktywne koncepcje)
+**Cel:** połączenie ekranów w spójny przepływ UX.  
+**Kroki:**
+1. AI generuje opis prototypu (ekrany + przejścia).  
+2. Wskazuje logikę danych i interakcji.  
+3. Przygotowuje specyfikację do testów.  
+**Wynik:** opis prototypu + link / struktura.  
+**Kiedy:** po wireframach.
+
+---
+
+### 6️⃣ Usability Testing (testy użyteczności)
+**Cel:** walidacja projektu z użytkownikami.  
+**Kroki:**
+1. AI wybiera typ testu (scenariuszowy, A/B, heurystyczny).  
+2. Tworzy 5–7 pytań testowych.  
+3. Analizuje wyniki: czas, błędy, satysfakcja.  
+**Wynik:** tabela błędów i insightów UX.  
+**Kiedy:** po prototypie.
+
+---
+
+### 7️⃣ Heuristic Evaluation (ewaluacja heurystyczna)
+**Cel:** ocena projektu względem zasad użyteczności (Nielsen/ISO).  
+**Kroki:**
+1. AI analizuje ekrany wg 10 heurystyk.  
+2. Zwraca listę problemów i rekomendacji.  
+3. Klasyfikuje je wg ważności.  
+**Wynik:** raport z oceną heurystyk.  
+**Kiedy:** po makietach.
+
+---
+
+### 8️⃣ Design Specification (dokumentacja projektowa)
+**Cel:** przygotowanie projektu do przekazania do developmentu.  
+**Kroki:**
+1. AI tworzy listę komponentów, stanów, tokenów i zachowań.  
+2. Dodaje zależności między UI a backendem.  
+3. Generuje strukturę pliku specyfikacji UX/UI.  
+**Wynik:** specyfikacja UI w formacie tekstowym / JSON.  
+**Kiedy:** koniec fazy Design.
+
+---
+
+## 📋 Przykład użycia
+> „Uruchom etap DESIGN dla *Cashflow Predictions*.  
+> Wygeneruj IA, user flow i wireframe oparty na danych z Define.”
+
+AI powinien:
+1. Wybrać metody z listy.  
+2. Stworzyć strukturę ekranu i flow.  
+3. Zwrócić tabelę komponentów i opis interakcji.  
+
+---
+
+## 🔗 Powiązania
+| Plik | Opis |
+|------|------|
+| `research/define_methods.md` | Dane wejściowe dla Design |
+| `design_system/components-guidelines.md` | Zasady budowy komponentów |
+| `process/design_process.md` | Odwołuje się do tego pliku w fazie Design |
+
+---
+
+## ✅ Status
+**stable** – AI może stosować wszystkie opisane metody i **zwracać ich rezultaty** w ustrukturyzowanej formie.
+
+---
