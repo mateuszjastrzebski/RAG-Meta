@@ -26,10 +26,11 @@ Celem jest zrozumienie *co badamy, dlaczego, jak to robić krok po kroku*, oraz 
 
 ## 🎯 Cel agenta AI
 Asystent ma:
-1. Rozpoznać, jakie badania są odpowiednie dla etapu projektu.  
+1. Przygotować wstęp związany z przygotowywanym obszarzem. Czym to jest. Od ogółu do szczegółu. Najlepiej neich znajdzie przykład z życia, którym wyjaśni zagadnienie i podlinkuje źródło wiedzy o temacie. 
+Rozpoznać, jakie badania są odpowiednie dla etapu projektu.  
 2. Przeprowadzić (lub zasymulować) analizę krok po kroku.  
-3. Wygenerować wyniki badań w formie podsumowania, tabeli lub listy insightów.  
-4. Zasugerować kolejne kroki (np. persony, mapy, hipotezy).  
+3. Wygenerować wyniki badań i analiz w formie podsumowania, tabeli lub listy insightów.  
+4. Przejść do kolejnych kroków procesu Asseco Design. 
 
 Agent może używać tych metod zarówno:
 - **samodzielnie (autonomiczny research)** – na podstawie promptu, danych i repozytorium,  
