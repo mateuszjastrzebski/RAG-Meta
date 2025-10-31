@@ -1,0 +1,106 @@
+---
+title: Metody Learn – Ewaluacja, analiza i doskonalenie UX po wdrożeniu
+type: research-guideline
+version: 1.0
+domain: ux-learn
+status: stable
+locale: pl-PL
+id: RESEARCH-LEARN-01
+tags:
+  - learn
+  - analytics
+  - iteration
+  - evaluation
+  - kpi
+created_at: 2025-10-31
+updated_at: 2025-10-31
+---
+
+# 📊 Metody Learn – Ewaluacja, analiza i doskonalenie UX po wdrożeniu
+
+Ten dokument opisuje metody oceny produktu po wdrożeniu i planowania iteracji.  
+Celem jest zamknięcie pętli projektowej – od danych eksploatacyjnych do nowych hipotez.
+
+---
+
+## 🎯 Cel agenta AI
+Asystent ma:
+1. Analizować dane po wdrożeniu (KPI, feedback, błędy).  
+2. Wnioskować o kierunki poprawy UX.  
+3. Zwracać wyniki analizy w formie raportu lub listy rekomendacji.  
+4. Wspierać planowanie iteracji produktu (v2, optymalizacje).
+
+---
+
+## 📚 Główne metody Learn
+
+---
+
+### 1️⃣ KPI Review (przegląd wskaźników)
+**Cel:** ocenić, czy cele projektu zostały osiągnięte.  
+**Kroki:**
+1. AI pobiera KPI z Define.  
+2. Analizuje wartości po wdrożeniu.  
+3. Ocenia odchylenia i trendy.  
+**Wynik:** tabela KPI – cel vs wynik.  
+**Kiedy:** po uruchomieniu produktu.
+
+---
+
+### 2️⃣ Feedback Analysis
+**Cel:** zebranie i klasyfikacja opinii użytkowników.  
+**Kroki:**
+1. AI analizuje zgłoszenia, komentarze, recenzje.  
+2. Grupuje je w tematy (np. UX, wydajność, treść).  
+3. Tworzy listę insightów i trendów.  
+**Wynik:** raport opinii + rekomendacje.  
+**Kiedy:** po wdrożeniu, co 1–3 miesiące.
+
+---
+
+### 3️⃣ Error & Log Review
+**Cel:** analiza błędów i anomalii systemowych.  
+**Kroki:**
+1. Zbierz logi systemowe i błędy użytkowników.  
+2. AI kategoryzuje błędy wg wpływu i częstotliwości.  
+3. Wskazuje problemy UX wynikające z błędów.  
+**Wynik:** tabela błędów + sugestie napraw.  
+**Kiedy:** po release.
+
+---
+
+### 4️⃣ Continuous UX Testing
+**Cel:** testowanie wprowadzonych zmian w wersjach iteracyjnych.  
+**Kroki:**
+1. Wybierz element do testu (np. nowy dashboard).  
+2. AI projektuje mini-test scenariuszowy.  
+3. Analizuje wyniki i porównuje do poprzednich.  
+**Wynik:** raport różnic + insighty.  
+**Kiedy:** przy każdej iteracji.
+
+---
+
+### 5️⃣ Retrospective Workshop
+**Cel:** zrozumienie, co zadziałało, a co nie.  
+**Kroki:**
+1. AI przygotowuje pytania: „co poszło dobrze / źle / co poprawić”.  
+2. Zbiera odpowiedzi zespołu i syntetyzuje wnioski.  
+3. Tworzy plan działań naprawczych.  
+**Wynik:** raport retrospektywny + plan działań.  
+**Kiedy:** po zakończeniu cyklu projektu.
+
+---
+
+## 🔗 Powiązania
+| Plik | Opis |
+|------|------|
+| `research/define_methods.md` | Dostarcza KPI i cele do weryfikacji |
+| `research/design_methods.md` | Dostarcza kontekstu dla testów UX |
+| `process/design_process.md` | Faza Learn odnosi się do tego pliku |
+
+---
+
+## ✅ Status
+**stable** – AI powinien **automatycznie analizować dane, feedback i KPI**, a wyniki zwracać w raportach i tabelach gotowych do iteracji.
+
+---
