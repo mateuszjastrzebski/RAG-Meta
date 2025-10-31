@@ -42,7 +42,7 @@ AI oraz projektant mają rozpoznać rynek, procesy, dane i oczekiwania, by oprac
 
 ### Instrukcja dla AI  
 - Używaj metod z pliku [`research/discovery_methods.md`](../research/discovery_methods.md).  
-- **AI ma obowiązek wykonywać i zwracać wyniki każdej zastosowanej metody**, np.:  
+- **AI ma obowiązek wykonywać i zwracać wyniki każdej zastosowanej metody**, ale jeżeli jest wyraźny powód może pomijać wybrane metody np.:  
   - streszczenia i raporty (Desk Research),  
   - tabele porównawcze (Competitive Analysis),  
   - mapy procesów (Process Mapping),  
