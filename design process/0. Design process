@@ -1,0 +1,155 @@
+---
+title: Proces projektowy UX – Discovery → Define → Design → Develop → Learn
+type: process-guideline
+version: 1.1
+domain: ux-process
+status: stable
+locale: pl-PL
+id: PROCESS-UX-01
+tags:
+  - ux
+  - proces
+  - projektowanie
+  - discovery
+  - develop
+  - learn
+created_at: 2025-10-30
+updated_at: 2025-10-31
+---
+
+# Proces projektowy UX  
+Ten dokument opisuje nasz standardowy proces projektowy, który pomaga projektantowi UX zrozumieć **co powinien wiedzieć**, **co zbadać**, oraz **jakie dane dostarczyć**, kiedy otrzymuje nowy temat — np.  
+> „Mam do zaprojektowania obszar biznesowy finansowy o nazwie *cashflow predictions*. Nie jestem pewien, co to dokładnie jest.”
+
+Proces jest podzielony na pięć głównych faz:
+
+1. **Discovery & Research**  
+2. **Define**  
+3. **Design**  
+4. **Develop**  
+5. **Learn**
+
+---
+
+## 1. Discovery & Research  
+
+### Cel fazy
+Zrozumieć **stan obecny**, potrzeby użytkowników i kontekst biznesowy.  
+W tym etapie projektant oraz agent AI badają rynek, systemy, dane i oczekiwania interesariuszy, aby opracować solidne podstawy do dalszego projektowania.
+
+---
+
+### Co AI i projektant powinni zrobić:
+- Skorzystać z opisanych metod w pliku [`research/discovery_methods.md`](../research/discovery_methods.md).  
+- **AI ma obowiązek nie tylko stosować te metody, ale także zwracać ich wyniki** — np.:
+  - streszczenie Desk Research,  
+  - tabelę porównawczą z Competitive Analysis,  
+  - mapę procesu użytkownika z Process Mapping,  
+  - listę insightów z User Interviews lub Data Analysis,  
+  - hipotezy projektowe z Hypothesis Workshop.  
+- W miarę możliwości agent powinien **łączyć wyniki badań z innymi źródłami** z repozytorium, np. z `asseco_systems_template.md` (systemy), `competitive_analysis.md` (benchmarki) czy `business_requirements.md` (cele biznesowe).  
+
+---
+
+### Przykładowy przebieg fazy (AI + projektant):
+
+| Krok | Działanie | Efekt |
+|------|------------|--------|
+| 1 | AI wykonuje **Desk Research** i przygotowuje streszczenie kontekstu rynkowego | Notatka z trendami, raport branżowy |
+| 2 | AI wykonuje **Stakeholder Interview (symulacja)** | Tabela „Oczekiwania – Bariery – Szanse” |
+| 3 | AI analizuje **konkurencję** | Tabela porównawcza (Competitive Analysis) |
+| 4 | Projektant (lub AI) tworzy **mapę procesu użytkownika** | Journey map tekstowa lub wizualna |
+| 5 | AI generuje **hipotezy projektowe** | Lista hipotez z priorytetami |
+| 6 | Projektant formułuje wnioski i uzupełnia brief | Podsumowanie Discovery |
+
+---
+
+### Rezultat fazy:
+- Mapa procesu lub podróży użytkownika  
+- Lista kluczowych pain points i szans  
+- Tabela konkurencji / benchmarków  
+- Zestaw hipotez i insightów projektowych  
+- Raport kontekstowy (Desk Research + Stakeholder insights)  
+- Wstępna hipoteza zakresu projektu  
+
+---
+
+### Wytyczne dla agenta AI:
+1. W każdej fazie Discovery agent powinien samodzielnie **wybierać metody** z pliku [`research/discovery_methods.md`](../research/discovery_methods.md), które są najbardziej adekwatne.  
+2. **Wyniki badań muszą być zwracane w czytelnej, gotowej do użycia formie** (tabela, lista insightów, streszczenie).  
+3. AI powinien **łączać dane między plikami** – np. wyniki analiz z systemami Asseco, personami, wymaganiami biznesowymi itp.  
+4. W razie braku danych agent ma sugerować brakujące elementy („należy przeprowadzić dodatkowy wywiad z doradcą bankowym”).  
+
+---
+
+## 2. Define  
+### Co projektant powinien zrobić:  
+- Na podstawie danych z Discovery zdefiniować zakres projektu: co wchodzi, a co nie.  
+- Określić **persony**, **use case’y** i **cele biznesowe**.  
+- Zidentyfikować kluczowe systemy Asseco zaangażowane w rozwiązanie.  
+- Zdefiniować wymagania biznesowe, techniczne i UX.  
+- Ustalić wskaźniki sukcesu (KPI) oraz ryzyka.
+
+### Rezultat fazy:  
+- Brief UX / Business Requirements Document  
+- Specyfikacja zakresu projektu  
+- Priorytety funkcjonalności i roadmapa
+
+---
+
+## 3. Design  
+### Co projektant powinien zrobić:  
+- Stworzyć makiety/prototypy (low–mid fidelity).  
+- Zaaranżować interakcje UI, przepływy danych, layouty.  
+- Upewnić się, że projekt uwzględnia integracje z systemami (np. dane z Core Banking, ABP).  
+- Przeprowadzić testy wstępne z użytkownikami.
+
+### Rezultat fazy:  
+- Makiety i prototypy  
+- Dokumentacja komponentów (zgodnie z `design_system/components-guidelines.md`)  
+- Dokumentacja integracji backend–frontend
+
+---
+
+## 4. Develop  
+### Co projektant powinien zrobić:  
+- Przekazać makiety i specyfikacje zespołowi developerskiemu.  
+- Wspierać implementację i testy.  
+- Uczestniczyć w UAT (User Acceptance Testing).  
+
+### Rezultat fazy:  
+- Gotowy produkt lub MVP  
+- Dokumentacja wdrożeniowa  
+
+---
+
+## 5. Learn  
+### Co projektant powinien zrobić:  
+- Zbierać dane eksploatacyjne i feedback użytkowników.  
+- Analizować KPI i insighty po wdrożeniu.  
+- Tworzyć raporty „lessons learned” i roadmapy iteracyjne.  
+
+### Rezultat fazy:  
+- Raport Learnings  
+- Plan wersji 2.0 / iteracji  
+
+---
+
+## 🔗 Powiązania w repozytorium  
+| Plik | Opis |
+|------|------|
+| `research/discovery_methods.md` | Szczegółowe instrukcje i metody badawcze stosowane w Discovery |
+| `research/competitive_analysis.md` | Instrukcja do tworzenia analiz porównawczych |
+| `prompts/business_requirements.md` | Pomaga zdefiniować cele biznesowe po Discovery |
+| `knowledge/systems/asseco_systems_template.md` | Baza wiedzy o systemach Asseco |
+| `design_system/components-guidelines.md` | Zasady projektowania UI i komponentów |
+
+---
+
+## ✅ Status i przeznaczenie  
+**Status:** stable  
+**Przeznaczenie:**  
+Dokument określa pełny proces projektowy UX i definiuje obowiązki AI w fazie **Discovery & Research** — AI ma nie tylko korzystać z metod badawczych, ale **aktywnie prezentować wyniki w ustrukturyzowanej formie** (tabele, mapy, wnioski).  
+Ma to umożliwić projektantowi szybkie przejście od danych do decyzji projektowych.  
+
+---
