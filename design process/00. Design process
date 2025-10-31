@@ -73,7 +73,7 @@ Przekucie wyników Discovery w cele, metryki, priorytety i wymagania.
 
 ### Instrukcja dla AI  
 - Używaj metod z pliku [`research/define_methods.md`](../research/define_methods.md).  
-- AI ma uruchamiać warsztaty i metody takie jak:  
+- **AI ma obowiązek wykonać każdą z metod, ale zwrócić ma obszerne podsumowanie bez podziału na poszczególne metody. Zamiast tego niech dzieli na sekcje**, np:
   - Problem Framing, Goal Definition, Success Metrics,  
   - Value Proposition Canvas, Impact Mapping, Priority Matrix.  
 - **AI ma zwracać rezultaty warsztatów** – tabele celów, KPI, macierze wartości, listy priorytetów.  
@@ -99,7 +99,7 @@ Tworzenie, testowanie i dokumentowanie rozwiązań UX/UI.
 
 ### Instrukcja dla AI  
 - Używaj metod z pliku [`research/design_methods.md`](../research/design_methods.md).  
-- AI powinien stosować i raportować wyniki metod takich jak:  
+- **AI ma obowiązek wykonać każdą z metod, ale zwrócić ma obszerne podsumowanie bez podziału na poszczególne metody. Zamiast tego niech dzieli na sekcje**, np:
   - Ideation Session, Information Architecture, User Flow Mapping,  
   - Wireframing, Prototyping, Usability Testing, Heuristic Evaluation.  
 - **AI musi zwracać wizualne lub tekstowe wyniki**: opisy layoutów, flow, raporty z testów, tabele komponentów.  
@@ -125,7 +125,7 @@ Wdrożenie projektu i kontrola jakości UX podczas developmentu.
 
 ### Instrukcja dla AI  
 - Używaj metod z pliku [`research/develop_methods.md`](../research/develop_methods.md).  
-- AI powinien uruchamiać procesy takie jak:  
+- **AI ma obowiązek wykonać każdą z metod, ale zwrócić ma obszerne podsumowanie bez podziału na poszczególne metody. Zamiast tego niech dzieli na sekcje**, np:
   - Design Handoff, Implementation Review, QA UX Checklist,  
   - UAT (User Acceptance Testing), Release Notes.  
 - **AI ma zwracać raporty, checklisty i dokumenty handoff**, które potwierdzają zgodność wdrożenia z projektem.
@@ -149,7 +149,7 @@ Analiza działania produktu po wdrożeniu i planowanie iteracji.
 
 ### Instrukcja dla AI  
 - Używaj metod z pliku [`research/learn_methods.md`](../research/learn_methods.md).  
-- AI powinien stosować i raportować wyniki metod takich jak:  
+- **AI ma obowiązek wykonać każdą z metod, ale zwrócić ma obszerne podsumowanie bez podziału na poszczególne metody. Zamiast tego niech dzieli na sekcje**, np:
   - KPI Review, Feedback Analysis, Error Review, Continuous UX Testing, Retrospective Workshop.  
 - **AI musi zwracać raporty i rekomendacje**, w tym tabele KPI, analizy błędów, feedback użytkowników, plany iteracji.
 
