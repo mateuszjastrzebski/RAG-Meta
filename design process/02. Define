@@ -1,0 +1,229 @@
+---
+title: Metody Define – Warsztaty, cele, metryki i ramy projektowe
+type: research-guideline
+version: 1.0
+domain: ux-research
+status: stable
+locale: pl-PL
+id: RESEARCH-DEFINE-01
+tags:
+  - ux
+  - define
+  - metodologia
+  - warsztaty
+  - cele
+  - kpi
+  - project scoping
+created_at: 2025-10-31
+updated_at: 2025-10-31
+---
+
+# 🎯 Metody Define – Warsztaty, cele, metryki i ramy projektowe
+
+Ten dokument opisuje **narzędzia i metody etapu Define** – czyli momentu, w którym wyniki badań (Discovery) są przekształcane w **cele, hipotezy, wskaźniki sukcesu, wymagania i priorytety projektowe**.  
+AI oraz projektant powinni z tych metod korzystać, by jasno określić:
+- co ma zostać rozwiązane,
+- dlaczego jest to ważne,
+- jaki będzie efekt dla użytkownika i organizacji.
+
+---
+
+## 🎯 Cel agenta AI
+
+Asystent AI ma:
+1. Na podstawie danych z Discovery pomóc określić **cele projektu**, **problemy użytkowników**, **oczekiwane rezultaty**.  
+2. Wykorzystać metody warsztatowe (z listy poniżej) do strukturyzacji pracy.  
+3. **Zwrócić wyniki w gotowej formie:** macierze, tabele, listy KPI, zmapowane zależności.  
+4. W razie braków – zaproponować brakujące dane lub zadania warsztatowe do wykonania.  
+
+---
+
+## 🧩 Struktura metody
+
+Każda metoda zawiera:
+- **Cel:** co osiąga.  
+- **Dane wejściowe:** co AI / projektant potrzebuje.  
+- **Kroki postępowania:** dokładny przebieg metody.  
+- **Wynik:** forma rezultatu (tabela, mapa, dokument).  
+- **Kiedy używać:** typowy moment w procesie UX.
+
+---
+
+## 📚 Główne metody Define
+
+---
+
+### 1️⃣ Problem Framing Workshop (ramowanie problemu)
+
+**Cel:** zdefiniowanie właściwego problemu projektowego do rozwiązania.  
+**Dane wejściowe:** insighty z Discovery (pain points, hipotezy).  
+**Kroki postępowania:**
+1. Zbierz listę problemów z badań i obserwacji.  
+2. Grupuj je tematycznie (np. „analityka”, „nawigacja”, „przepływy pracy”).  
+3. Sformułuj zdania problemowe:  
+   „Użytkownik X ma trudność z Y, ponieważ Z.”  
+4. Oceń wpływ każdego problemu na cel biznesowy (np. ROI, NPS, KPI).  
+**Wynik:** 1–3 priorytetowe problemy do rozwiązania + tabela priorytetyzacji.  
+**Kiedy używać:** początek etapu Define.
+
+---
+
+### 2️⃣ Goal Definition (określanie celów projektowych)
+
+**Cel:** ustalenie, *po co istnieje projekt* i *jaki efekt ma przynieść*.  
+**Dane wejściowe:** brief biznesowy, wyniki Discovery, oczekiwania stakeholderów.  
+**Kroki postępowania:**
+1. Zbierz cele biznesowe (np. „zwiększyć adopcję ABP”).  
+2. Zbierz cele użytkowników (np. „szybciej znajdować dane finansowe”).  
+3. Ustal wspólne punkty (business–user alignment).  
+4. Sformułuj cele w formacie **„Increase [metric] by [value] for [user segment] through [change]”**.  
+**Wynik:** 3–5 celów strategicznych z opisem wpływu.  
+**Kiedy używać:** na początku Define, przed metrykami.
+
+---
+
+### 3️⃣ Success Metrics (definiowanie metryk sukcesu)
+
+**Cel:** przekształcić cele w mierzalne wskaźniki (KPI, OKR, NPS, behavioral metrics).  
+**Dane wejściowe:** zdefiniowane cele projektu, dane ilościowe, KPI z organizacji.  
+**Kroki postępowania:**
+1. Zidentyfikuj wskaźniki wynikowe (outcome metrics) – np. wzrost liczby aktywnych użytkowników.  
+2. Zidentyfikuj wskaźniki procesowe (output metrics) – np. liczba ukończonych formularzy.  
+3. Określ metody pomiaru (np. logi systemowe, badania satysfakcji).  
+4. Stwórz tabelę: Cel → Metryka → Źródło → Częstotliwość pomiaru.  
+**Wynik:** tabela metryk sukcesu projektu.  
+**Kiedy używać:** Define, po ustaleniu celów.
+
+---
+
+### 4️⃣ Value Proposition Canvas (propozycja wartości)
+
+**Cel:** zrozumieć, jak rozwiązanie przynosi wartość użytkownikowi i biznesowi.  
+**Dane wejściowe:** persony, insighty, pain points, cele biznesowe.  
+**Kroki postępowania:**
+1. Dla każdej persony określ: zadania, bóle, oczekiwane korzyści.  
+2. Dla produktu określ: funkcje, łagodzące bóle, dostarczające korzyści.  
+3. Połącz w jedną macierz (user–value fit).  
+4. Zidentyfikuj luki („gaps”) i szanse dla UX.  
+**Wynik:** tabela lub wizualna mapa wartości.  
+**Kiedy używać:** Define – po stworzeniu person.
+
+---
+
+### 5️⃣ Impact Mapping (mapowanie wpływu)
+
+**Cel:** ustalić, które działania faktycznie wspierają cele biznesowe.  
+**Dane wejściowe:** cele, użytkownicy, możliwe funkcje, hipotezy.  
+**Kroki postępowania:**
+1. Zdefiniuj główny cel (biznesowy / UX).  
+2. Odpowiedz na pytania:  
+   - *Kto* może pomóc go osiągnąć?  
+   - *Jakie zachowania* muszą się zmienić?  
+   - *Co możemy dostarczyć*, by to umożliwić?  
+3. Utwórz mapę powiązań: **Cel → Aktorzy → Zachowania → Dostarczone rozwiązania**.  
+**Wynik:** mapa logiczna związków (tekstowo lub wizualnie).  
+**Kiedy używać:** Define / przed priorytetyzacją.
+
+---
+
+### 6️⃣ Priority Matrix (priorytetyzacja)
+
+**Cel:** nadać priorytety funkcjom, hipotezom i wymaganiom.  
+**Dane wejściowe:** lista pomysłów, celów, funkcji, insightów.  
+**Kroki postępowania:**
+1. Zbierz wszystkie funkcje / inicjatywy z poprzednich etapów.  
+2. Oceniaj każdą wg 2 wymiarów: **wartość dla użytkownika** vs **wysiłek implementacyjny**.  
+3. Wybierz szybkie zwycięstwa („quick wins”) i inicjatywy strategiczne.  
+4. Zapisz priorytety w tabeli lub macierzy Eisenhowera / Value–Effort.  
+**Wynik:** tabela priorytetów (wysoka wartość / niskie koszty).  
+**Kiedy używać:** końcówka Define, przed fazą Design.
+
+---
+
+### 7️⃣ Assumptions Mapping (mapa założeń)
+
+**Cel:** zidentyfikować i zweryfikować założenia stojące za projektem.  
+**Dane wejściowe:** hipotezy, dane, cele.  
+**Kroki postępowania:**
+1. Wypisz wszystkie założenia (np. „użytkownicy wiedzą, jak korzystać z raportów ABP”).  
+2. Podziel na: **pewne**, **ryzykowne**, **do potwierdzenia**.  
+3. Stwórz plan walidacji (testy, prototypy, badania).  
+4. Ustal, które założenia mogą zablokować projekt.  
+**Wynik:** tabela założeń + plan walidacji.  
+**Kiedy używać:** Define – po hipotezach, przed prototypowaniem.
+
+---
+
+### 8️⃣ Risk & Opportunity Analysis (analiza ryzyk i szans)
+
+**Cel:** zidentyfikować czynniki mogące wpłynąć na sukces projektu.  
+**Dane wejściowe:** cele, metryki, systemy, dane biznesowe.  
+**Kroki postępowania:**
+1. Zbierz ryzyka technologiczne, operacyjne, organizacyjne.  
+2. Dla każdego określ: prawdopodobieństwo, wpływ, plan mitigacji.  
+3. Zbierz szanse (np. nowe kanały, automatyzacja, integracje Asseco).  
+4. Utwórz tabelę: Ryzyko → Typ → Wpływ → Mitigacja / Szansa.  
+**Wynik:** tabela ryzyk i szans projektu.  
+**Kiedy używać:** końcówka Define / przed Design.
+
+---
+
+### 9️⃣ Design Principles Definition (zasady projektowe)
+
+**Cel:** ustalić 3–6 zasad, które będą kierować decyzjami projektowymi.  
+**Dane wejściowe:** insighty, wartości marki, cele UX.  
+**Kroki postępowania:**
+1. Zidentyfikuj wspólne motywy z badań (np. „transparentność”, „szybkość”).  
+2. Zamień je w zasady: „Projektuj tak, by użytkownik zawsze wiedział, gdzie się znajduje.”  
+3. Dodaj krótkie uzasadnienie i przykład.  
+**Wynik:** lista zasad projektowych.  
+**Kiedy używać:** koniec Define – fundament fazy Design.
+
+---
+
+### 10️⃣ Metrics-to-Action (łączenie metryk z projektem)
+
+**Cel:** upewnić się, że każda funkcja ma mierzalny wpływ.  
+**Dane wejściowe:** metryki sukcesu, backlog funkcjonalny.  
+**Kroki postępowania:**
+1. Dla każdej funkcji przypisz powiązaną metrykę.  
+2. Oceń, czy funkcja ma realny wpływ na KPI.  
+3. Usuń lub przesuń elementy bez jasnego wpływu.  
+**Wynik:** tabela funkcji → metryka → wartość oczekiwana.  
+**Kiedy używać:** Define → Design.
+
+---
+
+## 📋 Przykład użycia agenta AI
+
+> „Zacznij etap DEFINE dla projektu *Cashflow Predictions*.  
+> Wykonaj Problem Framing, Goal Definition, Success Metrics i Priority Matrix.  
+> Zwróć podsumowanie w tabeli i listę celów.”
+
+**AI powinien:**
+1. Zsyntetyzować dane z Discovery.  
+2. Uruchomić metody z listy (kolejno).  
+3. Zwrócić tabele: problemy → cele → metryki → priorytety.  
+4. Zakończyć raportem z 3–5 rekomendacjami strategicznymi.
+
+---
+
+## 🔗 Powiązania w repozytorium
+
+| Plik | Opis |
+|------|------|
+| `research/discovery_methods.md` | Wyniki Discovery stanowią dane wejściowe do Define |
+| `prompts/business_requirements.md` | Pomaga przekształcić dane z Define w BRD |
+| `process/design_process.md` | Główny proces projektowy odnosi się do tego pliku |
+| `research/competitive_analysis.md` | Źródło benchmarków i kontekstu rynkowego |
+| `knowledge/systems/asseco_systems_template.md` | Wskazuje, które systemy mogą być objęte projektem |
+
+---
+
+## ✅ Status i przeznaczenie
+**Status:** stable  
+**Przeznaczenie:**  
+Plik jest instrukcją dla AI i projektanta UX, jak przeprowadzać etap **DEFINE** w sposób ustrukturyzowany i mierzalny.  
+Agent AI ma obowiązek nie tylko korzystać z tych metod, ale również **zwracać wyniki warsztatów i analiz** w formie gotowych artefaktów (tabele, mapy, listy KPI, zasady projektowe).  
+
+---
