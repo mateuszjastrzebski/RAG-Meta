@@ -1,0 +1,138 @@
+---
+title: Hipotetyczna persona – tworzenie wstępnych modeli użytkowników
+type: research-guideline
+version: 1.0
+domain: ux-research
+status: stable
+locale: pl-PL
+id: RESEARCH-PERSONA-01
+tags:
+  - ux
+  - persona
+  - user-model
+  - define
+  - design
+  - research
+created_at: 2025-10-31
+updated_at: 2025-10-31
+---
+
+# 👤 Hipotetyczna persona – tworzenie wstępnych modeli użytkowników
+
+Ten dokument definiuje sposób, w jaki **AI oraz projektant UX** mają tworzyć **hipotetyczne persony** – czyli realistyczne, wstępne modele użytkowników powstałe przed badaniami ilościowymi.  
+Celem jest szybkie zrozumienie, **dla kogo projektujemy**, **jakie ma potrzeby i bariery**, oraz jak łączy się z konkretnymi systemami (np. ABP, core banking, ERP).
+
+---
+
+## 🎯 Cel agenta AI
+
+Asystent AI ma:
+1. Budować **2–4 hipotetyczne persony** oparte na danych z faz Discovery i Define.  
+2. Dopasować je do **domeny biznesowej projektu** (np. finanse, HR, edukacja).  
+3. Wskazać ich **cele, motywacje, frustracje, kompetencje cyfrowe** i kontekst pracy.  
+4. Zachować **realizm i różnorodność** między personami.  
+5. **Zwracać wyniki w ustrukturyzowanej formie** (tabela lub lista bloków).  
+6. Automatycznie sugerować pytania uzupełniające, jeśli dane wejściowe są zbyt ogólne.
+
+---
+
+## 🧱 Struktura persony
+
+Każda persona powinna zawierać następujące sekcje:
+
+| Pole | Opis |
+|------|------|
+| **Nazwa persony** | Imię i funkcja zawodowa (np. *Anna – analityk finansowy*). |
+| **Opis skrócony** | Kim jest i w jakim kontekście działa. |
+| **Cele i potrzeby** | Co chce osiągnąć, co jest dla niej najważniejsze. |
+| **Frustracje / Pain Points** | Co utrudnia jej działanie, co ją zniechęca. |
+| **Zachowania / Cechy** | Styl pracy, podejście do technologii, postawy. |
+| **Cytat reprezentatywny** | Autentyczne zdanie odzwierciedlające postawę persony. |
+| **Używane systemy / narzędzia** | Jakie aplikacje i systemy wykorzystuje (np. ABP, core banking, Excel). |
+| **Kompetencje cyfrowe** | Ocena: niskie / średnie / wysokie. |
+| **Scenariusz użytkowania** | Krótki opis typowego działania w systemie. |
+| **Kontekst emocjonalny** | Jak się czuje podczas wykonywania zadań (np. stres, pewność, frustracja). |
+
+---
+
+## 🧩 Kroki budowania person przez AI
+
+### 1️⃣ Analiza kontekstu projektu  
+- AI interpretuje temat projektu, np. *Cashflow Predictions*.  
+- Wykrywa typ organizacji, rolę użytkowników i systemy Asseco w tle.  
+
+### 2️⃣ Identyfikacja ról i archetypów  
+- Ekstrapoluj typowe role w domenie (np. analityk, kierownik, dyrektor, klient końcowy).  
+- Dobierz 2–4 różne profile, które pokrywają różne potrzeby i konteksty.  
+
+### 3️⃣ Generowanie pełnych profili  
+- Wypełnij wszystkie sekcje zgodnie ze strukturą powyżej.  
+- Używaj naturalnego języka, krótkich akapitów, cytatów i nazw systemów.  
+
+### 4️⃣ Weryfikacja kompletności  
+- AI sprawdza, czy każda persona zawiera wszystkie wymagane pola.  
+- Jeśli brakuje danych (np. o celach lub emocjach), agent dodaje pytania pomocnicze.  
+
+### 5️⃣ Zwrócenie wyników  
+- Format wyjścia: Markdown lub tabela JSON, gotowa do osadzenia w dokumentacji UX.  
+
+---
+
+## 📋 Przykład wyniku
+
+### Persona 1 – Anna, analityk finansowy
+- **Opis:** Pracuje w dziale kontrolingu dużego banku. Odpowiada za przygotowywanie raportów płynności finansowej.  
+- **Cele:** Chce automatyzować raporty i szybciej wykrywać anomalie w danych.  
+- **Frustracje:** Brak danych historycznych, zbyt wolne pobieranie danych z ABP.  
+- **Zachowania:** Pracuje metodycznie, lubi tabele, nie ufa predykcjom bez źródeł.  
+- **Cytat:** „Chcę widzieć, gdzie pieniądze uciekają – zanim zapyta o to dyrektor.”  
+- **Systemy:** ABP, Excel, ERP.  
+- **Kompetencje cyfrowe:** wysokie.  
+- **Scenariusz:** Uruchamia dashboard cashflow, analizuje dane z ostatniego kwartału, eksportuje raport.  
+- **Emocje:** Skupiona, pod presją czasu, zależy jej na dokładności.
+
+---
+
+### Persona 2 – Tomasz, dyrektor finansowy
+- **Opis:** Nadzoruje budżet kilku jednostek. Nie ma czasu na analizę szczegółowych raportów.  
+- **Cele:** Chce mieć szybki wgląd w ryzyka finansowe i prognozy płynności.  
+- **Frustracje:** Zbyt wiele raportów, brak syntetycznych wskaźników.  
+- **Zachowania:** Korzysta z mobilnych dashboardów, preferuje skrócone widoki.  
+- **Cytat:** „Nie mam czasu grzebać w danych – potrzebuję decyzji, nie arkuszy.”  
+- **Systemy:** ABP, Power BI, Outlook.  
+- **Kompetencje cyfrowe:** średnie.  
+- **Scenariusz:** Sprawdza rano raport z ABP, podejmuje decyzje o przesunięciach budżetu.  
+- **Emocje:** Presja czasu, potrzeba kontroli, frustracja przy opóźnieniach danych.
+
+---
+
+## 🧠 Typy person
+
+| Typ | Opis |
+|------|------|
+| **Hipotetyczna persona pierwotna** | Tworzona przed badaniami, bazująca na wiedzy domenowej i doświadczeniu. |
+| **Persona uzupełniona** | Aktualizowana po fazie Define, zawiera dane z wywiadów lub warsztatów. |
+| **Persona porównawcza** | Wykorzystywana do benchmarków konkurencyjnych (np. różne systemy finansowe). |
+
+---
+
+## 🔗 Powiązania w repozytorium
+
+| Plik | Opis |
+|------|------|
+| `research/discovery_methods.md` | Dostarcza dane wejściowe o użytkownikach i kontekście. |
+| `research/define_methods.md` | Pomaga powiązać cele i frustracje z wartościami biznesowymi. |
+| `research/design_methods.md` | Wykorzystuje persony do generowania pomysłów i scenariuszy UX. |
+| `knowledge/systems/asseco_systems_template.md` | Mapuje persony na systemy i dane (np. ABP, core banking). |
+| `process/design_process.md` | Etap Define i Design odwołuje się do tego pliku. |
+
+---
+
+## ✅ Status i przeznaczenie
+**Status:** stable  
+**Przeznaczenie:**  
+Ten plik służy jako przewodnik dla AI i projektantów UX przy tworzeniu *hipotetycznych person* w projektach Asseco i innych systemach domenowych.  
+AI ma **nie tylko generować persony**, ale również **zwracać ich pełne profile i proponować pytania uzupełniające**, jeśli dane są niekompletne.  
+Stosować w fazach *Define* i *Design*.
+
+---
